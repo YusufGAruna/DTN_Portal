@@ -1,0 +1,953 @@
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Config.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Aruna_DTN_Entegrasyon.dll.config
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Aruna_DTN_Entegrasyon.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Aruna_DTN_Entegrasyon.pdb
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\csc.exe
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\csc.exe.config
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\csc.rsp
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\csi.exe
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\csi.exe.config
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\csi.rsp
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.AppContext.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Console.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.IO.Compression.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.IO.Pipes.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Security.Claims.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.ValueTuple.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Xml.XPath.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\vbc.exe
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\vbc.exe.config
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\vbc.rsp
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\VBCSCompiler.exe
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Aruna.DataAccess.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Aruna.Utilities.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Charts.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.CodeParser.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Data.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.ExpressApp.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Persistent.Base.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.PivotGrid.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Sparkline.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.Mvc5.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Xpo.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGauges.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Extensions.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Web.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\EntityFramework.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\EntityFramework.SqlServer.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Newtonsoft.Json.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Net.Http.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Net.Http.WebRequest.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.Helpers.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.Mvc.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.Optimization.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.Razor.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Deployment.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Razor.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\WebGrease.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Renci.SshNet.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Web.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxHtmlEditor.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxPivotGrid.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxRichEdit.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxScheduler.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraScheduler.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpellChecker.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpreadsheet.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxTreeList.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.SpellChecker.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Spreadsheet.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.UI.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraEditors.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.UI.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraBars.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraTreeList.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPrinting.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraRichEdit.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Extensions.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPivotGrid.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraNavBar.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraVerticalGrid.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraLayout.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGrid.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Wizard.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraDiagram.v16.1.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Diagram.v16.1.Core.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Data.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.ExpressApp.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Persistent.Base.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.PivotGrid.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Sparkline.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Xpo.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGauges.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Extensions.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Web.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\EntityFramework.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\EntityFramework.SqlServer.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\NetOpenX.Rest.Client.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Newtonsoft.Json.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.Helpers.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.Mvc.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.Optimization.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.Razor.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Deployment.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Razor.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\Renci.SshNet.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Web.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxHtmlEditor.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxPivotGrid.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxRichEdit.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxScheduler.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraScheduler.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpellChecker.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpreadsheet.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxTreeList.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.SpellChecker.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Spreadsheet.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.UI.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraEditors.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.UI.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraBars.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraTreeList.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPrinting.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraRichEdit.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPivotGrid.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraNavBar.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraVerticalGrid.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraLayout.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGrid.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Wizard.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraDiagram.v16.1.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\DevExpress.Diagram.v16.1.Core.xml
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.ExpressApp.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.ExpressApp.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.ExpressApp.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.ExpressApp.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Utils.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Utils.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Utils.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Utils.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraReports.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraReports.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraReports.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraReports.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraReports.v16.1.Web.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraReports.v16.1.Web.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraReports.v16.1.Web.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraReports.v16.1.Web.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Razor.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Utils.v16.1.UI.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Utils.v16.1.UI.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Utils.v16.1.UI.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Utils.v16.1.UI.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.DataAccess.v16.1.UI.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.DataAccess.v16.1.UI.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.DataAccess.v16.1.UI.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.DataAccess.v16.1.UI.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraRichEdit.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraRichEdit.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraRichEdit.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraRichEdit.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraNavBar.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraNavBar.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraNavBar.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraNavBar.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraGrid.v16.1.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Diagram.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Diagram.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Diagram.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Diagram.v16.1.Core.resources.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.ResolveComReference.cache
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.Reports.xrptTeklif.resources
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.GenerateResource.cache
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.dll.licenses
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.CoreCompileInputs.cache
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.CopyComplete
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.pdb
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Interop.CommonQuery.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Interop.NetGraphLibrary.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Interop.NetsisCOMLibrary50.dll
+C:\Users\onur.ozcan\source\repos\Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csprojAssemblyReference.cache
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\Config.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\Aruna_DTN_Entegrasyon.dll.config
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\Aruna_DTN_Entegrasyon.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\Aruna_DTN_Entegrasyon.pdb
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Charts.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.CodeParser.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Data.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.ExpressApp.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Persistent.Base.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.PivotGrid.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Sparkline.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.Mvc5.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Xpo.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGauges.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Extensions.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Web.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\EntityFramework.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\EntityFramework.SqlServer.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\Newtonsoft.Json.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Net.Http.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Net.Http.WebRequest.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Helpers.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Mvc.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Optimization.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Razor.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Deployment.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Razor.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\WebGrease.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Web.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxHtmlEditor.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxPivotGrid.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxRichEdit.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxScheduler.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraScheduler.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpellChecker.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpreadsheet.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxTreeList.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.SpellChecker.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Spreadsheet.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.UI.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraEditors.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.UI.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraBars.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraTreeList.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPrinting.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraRichEdit.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Extensions.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPivotGrid.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraNavBar.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraVerticalGrid.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraLayout.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGrid.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Wizard.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraDiagram.v16.1.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Diagram.v16.1.Core.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Data.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.ExpressApp.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Persistent.Base.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.PivotGrid.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Sparkline.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Xpo.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGauges.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Extensions.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Web.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\EntityFramework.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\EntityFramework.SqlServer.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\Newtonsoft.Json.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Helpers.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Mvc.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Optimization.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Razor.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Deployment.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Razor.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Web.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxHtmlEditor.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxPivotGrid.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxRichEdit.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxScheduler.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraScheduler.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpellChecker.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpreadsheet.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxTreeList.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.SpellChecker.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Spreadsheet.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.UI.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraEditors.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.UI.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraBars.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraTreeList.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPrinting.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraRichEdit.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPivotGrid.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraNavBar.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraVerticalGrid.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraLayout.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGrid.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Wizard.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraDiagram.v16.1.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Diagram.v16.1.Core.xml
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.DataAccess.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.ExpressApp.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.ExpressApp.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.ExpressApp.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.ExpressApp.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Utils.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Utils.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Utils.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Utils.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Xpo.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraReports.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraReports.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraReports.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraReports.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraReports.v16.1.Web.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraReports.v16.1.Web.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraReports.v16.1.Web.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraReports.v16.1.Web.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Razor.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Utils.v16.1.UI.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Utils.v16.1.UI.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Utils.v16.1.UI.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Utils.v16.1.UI.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.DataAccess.v16.1.UI.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.DataAccess.v16.1.UI.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.DataAccess.v16.1.UI.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.DataAccess.v16.1.UI.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraRichEdit.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraRichEdit.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraRichEdit.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraRichEdit.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraNavBar.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraNavBar.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraNavBar.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraNavBar.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraGrid.v16.1.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Diagram.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Diagram.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Diagram.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Diagram.v16.1.Core.resources.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Interop.CommonQuery.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Interop.NetGraphLibrary.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Interop.NetsisCOMLibrary50.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.ResolveComReference.cache
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.Reports.xrptTeklif.resources
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.GenerateResource.cache
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.dll.licenses
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.CoreCompileInputs.cache
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.CopyComplete
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.dll
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.pdb
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csprojAssemblyReference.cache
+C:\Users\yusuf.guvencli\source\repos\DTN Entegrasyon Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.Reports.xptSiparisReport.resources
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\Config.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\Aruna_DTN_Entegrasyon.dll.config
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\Aruna_DTN_Entegrasyon.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\Aruna_DTN_Entegrasyon.pdb
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Charts.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.CodeParser.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Data.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.ExpressApp.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Office.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Persistent.Base.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.PivotGrid.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Printing.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.RichEdit.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Sparkline.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.Mvc5.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.Resources.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Xpo.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGauges.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Extensions.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Web.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\EntityFramework.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\EntityFramework.SqlServer.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\Microsoft.Web.Infrastructure.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\Newtonsoft.Json.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Net.Http.Formatting.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Helpers.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Mvc.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Optimization.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Razor.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Deployment.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Razor.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\WebGrease.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Drawing.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Web.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxHtmlEditor.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxPivotGrid.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxRichEdit.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxScheduler.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraScheduler.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpellChecker.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpreadsheet.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxTreeList.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.SpellChecker.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Spreadsheet.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.UI.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraEditors.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.UI.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraBars.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraTreeList.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPrinting.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraRichEdit.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Extensions.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPivotGrid.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraNavBar.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraVerticalGrid.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraLayout.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGrid.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Wizard.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraDiagram.v16.1.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Diagram.v16.1.Core.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Data.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.ExpressApp.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Office.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Persistent.Base.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.PivotGrid.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Printing.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.RichEdit.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Sparkline.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Xpo.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGauges.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Extensions.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraReports.v16.1.Web.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\EntityFramework.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\EntityFramework.SqlServer.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\Newtonsoft.Json.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Net.Http.Formatting.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Helpers.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Mvc.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Optimization.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.Razor.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Deployment.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\System.Web.WebPages.Razor.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Pdf.v16.1.Drawing.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Web.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxHtmlEditor.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxPivotGrid.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxRichEdit.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxScheduler.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraScheduler.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpellChecker.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxSpreadsheet.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Web.ASPxTreeList.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.SpellChecker.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Spreadsheet.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Utils.v16.1.UI.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraEditors.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.DataAccess.v16.1.UI.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraBars.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraTreeList.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPrinting.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraRichEdit.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraPivotGrid.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraNavBar.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraVerticalGrid.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraLayout.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraGrid.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraCharts.v16.1.Wizard.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.XtraDiagram.v16.1.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\DevExpress.Diagram.v16.1.Core.xml
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Data.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Data.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Data.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Data.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.DataAccess.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.DataAccess.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.DataAccess.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.DataAccess.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.ExpressApp.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.ExpressApp.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.ExpressApp.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.ExpressApp.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Utils.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Utils.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Utils.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Utils.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Xpo.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Xpo.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Xpo.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Xpo.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraReports.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraReports.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraReports.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraReports.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraReports.v16.1.Web.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraReports.v16.1.Web.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraReports.v16.1.Web.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraReports.v16.1.Web.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Helpers.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Mvc.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Optimization.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.Razor.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.WebPages.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.WebPages.Deployment.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\tr\System.Web.WebPages.Razor.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxScheduler.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Web.ASPxTreeList.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Utils.v16.1.UI.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Utils.v16.1.UI.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Utils.v16.1.UI.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Utils.v16.1.UI.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraEditors.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraEditors.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraEditors.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraEditors.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.DataAccess.v16.1.UI.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.DataAccess.v16.1.UI.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.DataAccess.v16.1.UI.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.DataAccess.v16.1.UI.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraBars.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraBars.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraBars.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraBars.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraTreeList.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraTreeList.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraTreeList.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraTreeList.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraPrinting.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraPrinting.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraPrinting.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraPrinting.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraRichEdit.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraRichEdit.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraRichEdit.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraRichEdit.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraPivotGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraPivotGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraPivotGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraPivotGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraLayout.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraLayout.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraLayout.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraLayout.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraGrid.v16.1.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\de\DevExpress.Diagram.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\es\DevExpress.Diagram.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ja\DevExpress.Diagram.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\bin\ru\DevExpress.Diagram.v16.1.Core.resources.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Interop.CommonQuery.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Interop.NetGraphLibrary.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Interop.NetOpenX50.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Interop.NetsisCOMLibrary50.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.ResolveComReference.cache
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.Reports.xptSiparisReport.resources
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.Reports.xrptTeklif.resources
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.GenerateResource.cache
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.dll.licenses
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.CoreCompileInputs.cache
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.CopyComplete
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.dll
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.pdb
+D:\Projeler\DTN\DTN Portal\Aruna_DTN_Entegrasyon\obj\Debug\Aruna_DTN_Entegrasyon.csproj.AssemblyReference.cache

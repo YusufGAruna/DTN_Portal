@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Parameters>
+  <ConnectionParameters>
+    <DbServerName>192.168.12.11\ARUNA</DbServerName>
+    <DbUserName>sa</DbUserName>
+    <DbUserPassword>sapass</DbUserPassword>
+    <DbName>DTN2021</DbName>
+  </ConnectionParameters>
+  <NetsisParameters>
+    <MuhtelifCari>MUHTELIF</MuhtelifCari>
+    <NetsisUserName>netsis</NetsisUserName>
+    <NetsisUserPassword>net1</NetsisUserPassword>
+    <NetsisDepoCode>1</NetsisDepoCode>
+    <NetsisBranchCode>1</NetsisBranchCode>
+    <BlokeDepo>4</BlokeDepo>
+    <RESTAPI>http://192.168.12.11:7070</RESTAPI>
+  </NetsisParameters>
+</Parameters>

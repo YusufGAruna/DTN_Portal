@@ -1,0 +1,94 @@
+﻿@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridViewBloke";
+        settings.CallbackRouteValues = new { Controller = "Siparis", Action = "GridViewPartialBloke" };
+
+        settings.EnableCallbackAnimation = false;
+        settings.SettingsLoadingPanel.Text = "Lütfen Bekleyin";
+        //settings.SettingsPager.Visible = true;
+        settings.Settings.ShowFooter = true;
+        settings.Settings.ShowGroupPanel = true;
+        //settings.Settings.ShowFilterRow = true;
+
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+
+        settings.SettingsPager.Visible = true;
+        //settings.GridViewProperties.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowSelectCheckbox = true;
+
+
+        settings.SettingsBehavior.AllowGroup = true;
+        settings.SettingsBehavior.AllowSort = true;
+        settings.Settings.AutoFilterCondition = AutoFilterCondition.Contains;
+        //settings.Settings.ShowHeaderFilterButton = true;
+        //settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+
+
+        settings.SettingsBehavior.AllowGroup = true;
+        settings.SettingsBehavior.AllowSort = true;
+        settings.SettingsBehavior.FilterRowMode = GridViewFilterRowMode.Auto;
+        settings.SettingsText.GroupPanel = "Kayıtları gruplamak için kolon başlığını bu alana sürükleyip bırakın";
+
+        settings.SettingsPager.PageSize = 10;
+        //settings.Styles.AlternatingRow.BackColor = System.Drawing.Color.AliceBlue;
+        settings.Styles.Header.BackColor = System.Drawing.Color.LightSkyBlue;
+        settings.Styles.Header.ForeColor = System.Drawing.Color.Black;
+
+
+
+        settings.KeyFieldName = "ID";
+
+        settings.Columns.Add("ID");
+        settings.Columns.Add("SubeKodu");
+        //settings.Columns.Add("SiparisNo");
+	settings.Columns.Add(column =>
+        {
+            column.FieldName = "SiparisNo";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+
+        //settings.Columns.Add("StokKodu");
+	settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokKodu";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+        //settings.Columns.Add("StokAdi");
+	settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokAdi";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+        settings.Columns.Add("Sira");
+        settings.Columns.Add("CariKodu");
+       // settings.Columns.Add("CariAdi");
+	settings.Columns.Add(column =>
+        {
+            column.FieldName = "CariAdi";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+        settings.Columns.Add("Sira");
+        settings.Columns.Add("Miktar");
+
+        settings.ClientSideEvents.SelectionChanged = "OnChecked";
+
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()
+
+
+
+
+

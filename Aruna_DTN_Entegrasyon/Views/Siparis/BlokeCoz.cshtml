@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "BlokeCoz";
+    List<string> SelectedRows = (List<string>)TempData["SelectedBlokeler"];
+    int SelCount = SelectedRows.Count;
+}
+<style>
+    #BlokeCoz {
+        display: none;
+    }
+</style>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var Table = document.getElementById("GridViewBlokeCoz_col8");
+        var innerTable = Table.getElementsByTagName("td");
+        innerTable[0].innerText = 'Blokesi Çözülecek Miktar';
+
+
+        
+        
+        
+        
+
+    });
+
+    function OnKilit(sender) {
+        var idObj = $(sender).data();
+        if (parseFloat(document.getElementById("txt_" + idObj.id + "_I").value.replace(',', '.')) == 0) {
+            alert("0 dan farklı bir şey giriniz");
+        } else {
+            if (document.getElementById("txt_" + idObj.id + "_I").value.split(',')[1] == "___") {
+                document.getElementById("txt_" + idObj.id + "_I").value = document.getElementById("txt_" + idObj.id + "_I").value.split(',')[0] + "," + "0";
+            }
+            document.getElementById("txt_" + idObj.id + "_I").value = document.getElementById("txt_" + idObj.id + "_I").value.replaceAll('_', '');
+            document.getElementById("txt_" + idObj.id + "_I").disabled = true;
+
+            Control();
+
+            var span = document.getElementById("btn_" + idObj.id);
+            span.style.display = "none";
+
+            var span2 = document.getElementById("btnCoz_" + idObj.id);
+            span2.style.display = "block";
+        }
+
+    }
+    function OnCoz(sender) {
+        var idObj = $(sender).data();
+        document.getElementById("txt_" + idObj.id + "_I").value = 0;
+        document.getElementById("txt_" + idObj.id + "_I").disabled = false;
+
+        Control();
+
+        var span = document.getElementById("btn_" + idObj.id);
+        span.style.display = "block";
+
+        var span2 = document.getElementById("btnCoz_" + idObj.id);
+        span2.style.display = "none";
+    }
+    function Control() {
+
+        var x = document.getElementById("BlokeCoz");
+        var count = $("input[disabled]").length;
+            var Selected = @SelCount;
+            if (Selected == count) {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+    }
+
+    function SendtoController() {
+      
+        var Selected = @SelCount;
+        var i;
+        var array = new Array();
+        for (i = 0; i < Selected; i++) {
+            array[i] = document.getElementById("txt_" + i + "_I").value;
+            console.log(document.getElementById("txt_" + i + "_I").value);
+        }
+        var Url = "@Url.Action("BlokeInsert","Siparis")";
+        array.forEach((arrayElement, index) => Url = Url + (index == 0 ? "?" : "&") + "ItemList=" + arrayElement);
+            
+
+            window.location.href = Url;
+    }
+
+</script>
+
+<script type="text/javascript">
+
+</script>
+
+<br />
+<br />
+<br />
+
+<h2>Bloke Çözme</h2>
+
+
+<br />
+<br />
+<br />
+<div id="BlokeCoz">
+
+    <button onclick="SendtoController()" class="btn btn-primary">Blokelerini Çöz</button>
+
+</div>
+
+<br />
+<br />
+
+
+@Html.Action("GridViewPartialBlokeCoz")

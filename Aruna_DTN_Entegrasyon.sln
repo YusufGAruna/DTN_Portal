@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aruna_DTN_Entegrasyon", "Aruna_DTN_Entegrasyon\Aruna_DTN_Entegrasyon.csproj", "{6008B889-D716-40EA-B445-2C6E24DE4E43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6008B889-D716-40EA-B445-2C6E24DE4E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6008B889-D716-40EA-B445-2C6E24DE4E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6008B889-D716-40EA-B445-2C6E24DE4E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6008B889-D716-40EA-B445-2C6E24DE4E43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25C5A66D-97CC-44D6-BB5F-0A319C237706}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,59 @@
+@{
+    var gridLookup = Html.DevExpress().GridLookup(settings => {
+        settings.Name = "GridLookupStok";
+        settings.KeyFieldName = "StokKodu";
+
+        settings.GridViewProperties.CallbackRouteValues = new { Controller = "Teklif", Action = "GridLookupPartialStok" };
+        settings.Properties.SelectionMode = GridLookupSelectionMode.Single;
+        settings.Properties.TextFormatString = "{0}";
+
+        settings.ControlStyle.CssClass = "form-control col-md-offset-4 w55";
+
+        //settings.GridViewProperties.Settings.GroupSummaryTextSeparator = "Kayýtlarý gruplamak için kolon baþlýðýný bu alana sürükleyip býrakýn";
+
+        settings.GridViewProperties.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.GridViewProperties.SettingsBehavior.ConfirmDelete = true;
+	settings.GridViewProperties.Settings.AutoFilterCondition = AutoFilterCondition.Contains;
+        //settings.CommandColumn.Visible = true;
+        //settings.CommandColumn.ShowNewButton = true;
+        //settings.CommandColumn.ShowDeleteButton = true;
+        //settings.CommandColumn.ShowEditButton = true;
+
+        settings.GridViewProperties.SettingsPager.Visible = true;
+        //settings.GridViewProperties.Settings.ShowGroupPanel = true;
+        settings.GridViewProperties.Settings.ShowFilterRow = true;
+
+
+
+
+        //settings.Columns.Add("StokKodu");
+	settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokKodu";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+
+        //settings.Columns.Add("StokAdi");
+	settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokAdi";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+
+        settings.Columns.Add("GrupKodu");
+        settings.Columns.Add("Fiyat");
+        settings.Columns.Add("KutuKati");
+        settings.Columns.Add("ToplamBakiye");
+        settings.Columns.Add("DepoToplamBakiye").Caption = "Depo Bakiye";
+        settings.Columns.Add("SaticiSiparisMiktar").Caption = "Satýcý Miktar";
+        settings.Columns.Add("TransitBakiye").Caption = "Transit";
+        settings.Columns.Add("Kdv");
+        settings.GridViewClientSideEvents.RowClick = "OnSelectionChanged";
+    });
+    if (ViewData["EditError"] != null){
+        gridLookup.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@gridLookup.BindList(Model).GetHtml()
+
+

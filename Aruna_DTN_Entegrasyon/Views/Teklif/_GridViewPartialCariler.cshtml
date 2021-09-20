@@ -1,0 +1,59 @@
+@{
+    var grid = Html.DevExpress().GridView(settings => {
+        settings.Name = "GridView";
+        settings.CallbackRouteValues = new { Controller = "Teklif", Action = "GridViewPartialCariler" };
+
+
+        settings.KeyFieldName = "CariKod";
+
+        //settings.CommandColumn.Visible = true;
+
+        settings.EnableCallbackAnimation = false;
+        settings.SettingsLoadingPanel.Text = "Lütfen Bekleyin";
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowFooter = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+
+        //settings.Settings.ShowHeaderFilterButton = true;
+        //settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+
+
+        settings.SettingsBehavior.AllowGroup = true;
+        settings.SettingsBehavior.AllowSort = true;
+        settings.SettingsBehavior.FilterRowMode = GridViewFilterRowMode.Auto;
+        settings.Settings.AutoFilterCondition = AutoFilterCondition.Contains;
+        settings.SettingsText.GroupPanel = "Kayýtlarý gruplamak için kolon baþlýðýný bu alana sürükleyip býrakýn";
+
+        settings.SettingsPager.PageSize = 10;
+        settings.Styles.AlternatingRow.BackColor = System.Drawing.Color.AliceBlue;
+        settings.Styles.Header.BackColor = System.Drawing.Color.LightSkyBlue;
+        settings.Styles.Header.ForeColor = System.Drawing.Color.Black;
+
+
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(c =>
+            {
+                ViewContext.Writer.Write(string.Format("<span class=\"btn btn-info btn-sm\" data-id='{0}' onclick=\"OnSec(this);\"> Seç</span>", c.KeyValue));
+            });
+        });
+
+        settings.Columns.Add("CariKod");
+        //settings.Columns.Add("CariIsim");
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CariIsim";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+
+        //settings.Columns.Add("Adres");
+        //settings.Columns.Add("VergiDairesi");
+        //settings.Columns.Add("VergiNumarasi");
+        //settings.Columns.Add("TcNo");
+        //settings.Columns.Add("EMail");
+    });
+}
+@grid.Bind(Model).GetHtml()
+

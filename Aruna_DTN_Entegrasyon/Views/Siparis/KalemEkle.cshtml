@@ -1,0 +1,411 @@
+﻿@model Aruna_DTN_Entegrasyon.ViewModels.KalemViewModel
+
+@{
+    ViewBag.Title = "KalemEkle";
+
+    var Kullanici = ViewBag.Kullanici;
+    string MaxIskonto = Convert.ToString(Kullanici.IskontoOran);
+}
+
+<style>
+    .w55 {
+        width: 25%;
+    }
+</style>
+
+
+<script type="text/javascript">
+
+    function OnSelectionChanged(s, e) {
+        s.GetRowValues(e.visibleIndex, "StokKodu;StokAdi;GrupKodu;Fiyat;KutuKati", OnGetRowValues);
+    }
+    function OnGetRowValues(values) {
+        document.getElementById("GridLookupStok_I").value = values[0];
+        document.getElementById("StokAdi").value = values[1];
+        document.getElementById("Fiyat").value = values[3];
+        document.getElementById("KutuKati").value = values[4];
+        $('#partialYaslandirma').load('@Url.Action("PartialYaslandirmaMethod", "Siparis")', { StokKodu: values[0] });
+
+
+        if (document.getElementById('Miktar').value != null || document.getElementById('Miktar').value != '') {
+            document.getElementById('Tutar').value = document.getElementById('Miktar').value * values[3];
+        }
+
+        var x = document.getElementById("Depolar");
+
+        var Depo = x.options[x.selectedIndex].value;
+
+        $.ajax({
+               url: '@Url.Action("BakiyeResult", "Siparis")',
+               type: 'GET',
+            data: {
+                StokKodu: values[0]
+                },
+            success: function (data) {
+
+                document.getElementById("Bakiye").value = data;
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+        });
+
+        $.ajax({
+               url: '@Url.Action("GrupKoduKontrol", "Siparis")',
+               type: 'GET',
+            data: {
+                GrupKodu: values[2]
+                },
+            success: function (data) {
+              
+                if ('true' == data) {
+                    document.getElementById("Fiyat").readOnly = true;
+
+                } else {
+                    document.getElementById("Fiyat").readOnly = false;
+
+                }
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+         });
+
+
+    }
+</script>
+
+<script type="text/javascript">
+    function OnGridFocusedYas(s, e) {
+        s.GetRowValues(e.visibleIndex, 'Fiyat;Miktar;DepoKodu', RowsetValue);
+    }
+    function RowsetValue(values) {
+        document.getElementById("GridLookup_I").value = values[0];
+        if ('null' != values[1]) {
+            document.getElementById("MaxMiktar").value = values[1];
+        }
+
+        document.getElementById("Depolar").value = values[2];
+
+
+        if (document.getElementById('Miktar').value != null || document.getElementById('Miktar').value != '') {
+            document.getElementById('MaliyetTutari').value = document.getElementById('Miktar').value * values[0];
+        }
+    }
+</script>
+
+
+<script>
+    function MiktarChanged() {
+        document.getElementById("MaliyetTutari").value = document.getElementById("Miktar").value * document.getElementById("GridLookup_I").value;
+        document.getElementById("Tutar").value = document.getElementById("Miktar").value * document.getElementById("Fiyat").value;
+    }
+
+</script>
+
+<script>
+    function FiyatChanged() {
+        document.getElementById("MaliyetTutari").value = document.getElementById("Miktar").value * document.getElementById("GridLookup_I").value;
+        document.getElementById("Tutar").value = document.getElementById("Miktar").value * document.getElementById("Fiyat").value;
+    }
+
+</script>
+
+
+<h2>Kalem Ekleme</h2>
+
+
+<br />
+<br />
+
+
+@Html.Hidden("MaxMiktar", 0)
+
+@Html.Hidden("KutuKati", 0)
+
+
+<div class="form-group">
+    @Html.Label("Sipariş Numarası", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.TextBox("FatNo", TempData["FatNo"].ToString(), htmlAttributes: new { @class = "form-control", @readonly = "readonly" })
+
+</div>
+
+<div class="form-group">
+    @Html.Label("Tarih", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.TextBox("Tarih", TempData["Tarih"].ToString(), htmlAttributes: new { @class = "form-control", @readonly = "readonly" })
+
+</div>
+
+
+<br />
+
+<div class="form-group">
+    @Html.Label("Tip", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.DropDownList("Tip", EnumHelper.GetSelectList(typeof(Aruna_DTN_Entegrasyon.Models.FatType)), "Lütfen Bir Tip Seçiniz", htmlAttributes: new { @class = "form-control" })
+</div>
+
+<div class="form-group">
+    @Html.Label("Depo Kodu", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.DropDownList("Depolar", TempData["Depolar"] as List<SelectListItem>, htmlAttributes: new { @class = "form-control", @readonly = "readonly" })
+</div>
+
+<div class="form-group">
+    @Html.Label("Stok Kodu", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @*@Html.Editor("StokKodu", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1", @value = "1" } })*@
+
+
+    <div id="StokDiv" onselect="Reloading()">
+        @Html.Action("GridLookupPartialStok")
+    </div>
+
+    @*@Html.DropDownList("StokKodu", null, htmlAttributes: new { @class = "form-control selectpicker" })*@
+</div>
+
+<div class="form-group">
+    @Html.Label("Stok Adı", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("StokAdi", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+</div>
+
+<div class="form-group">
+    @Html.Label("Maliyet Fiyatı", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @*@Html.Editor("MaliyetFiyati", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1.00", @value = "1.00" } })*@
+
+    <div id="partialYaslandirma">
+        @Html.Action("GridLookupPartialYaslandirma", "Teklif")
+    </div>
+
+</div>
+
+<div class="form-group">
+    @Html.Label("Miktar", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("Miktar", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1", @value = "1", @onchange = "MiktarChanged()" } })
+</div>
+
+<div class="form-group">
+    @Html.Label("Fiyat", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("Fiyat", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1.00", @value = "1.00", @onchange = "FiyatChanged()" } })
+</div>
+
+<div class="form-group">
+    @Html.Label("Tutar", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("Tutar", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+</div>
+
+<div class="form-group">
+    @Html.Label("Maliyet Tutarı", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("MaliyetTutari", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+</div>
+
+<div class="form-group">
+    @Html.Label("Iskonto Oranı", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("IskontoOrani", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1.00", default_value = "0" } })
+</div>
+
+<div class="form-group">
+    @Html.Label("Toplam Bakiye", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("Bakiye", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+</div>
+
+
+<br />
+
+<div class="form-group">
+    <input type="submit" id="StokButton" value="Kaydet" class="btn btn-default" />
+</div>
+
+<div>
+    @Html.ActionLink("Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+</div>
+<br />
+    
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $(document).ready(function () {
+            var sira = $("#Sira").val();
+            if (!sira) {
+                document.getElementById("IskontoOrani").value = 0;
+            }
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#StokButton").click(function () {
+            var StokKod = $("#GridLookupStok_I").val();
+            var stokAdi = $("#StokAdi").val();
+            var x = document.getElementById("Depolar");
+
+            var depo = x.options[x.selectedIndex].value;
+            var depoad = x.options[x.selectedIndex].text;
+            var tipel = document.getElementById('Tip');
+            if (tipel.selectedIndex <= 0) {
+                alert("Lütfen tip seçiniz");
+            }
+            else {
+            var tip = tipel.options[tipel.selectedIndex].value;
+            var mik = $("#Miktar").val();
+            var kutu = document.getElementById('KutuKati').value;
+            if (kutu != 1 && ((parseFloat(mik).toFixed(2) / parseFloat(kutu).toFixed(2))%1)!=0 ) {
+                mik = ((parseInt(mik / kutu) + 1) * kutu).toFixed(2);
+                alert('Kutu Katına tamamlanmıştır.');
+            }
+            document.getElementById('Miktar').value = mik;
+
+
+            var maxMiktar = document.getElementById('MaxMiktar').value;
+
+                mik = parseFloat(mik.toString().replace(',', '.'));
+
+            maxMiktar = parseFloat(maxMiktar.replace(',', '.'));
+
+            var fat = $("#FatNo").val();
+            var fiy = $("#Fiyat").val();
+            var tar = $("#Tarih").val();
+            var malfiy = $("#GridLookup_I").val();
+            var isk = $("#IskontoOrani").val();
+            var bakiye = $("#Bakiye").val();
+            //if (mik == "" || fiy == "" || isk == "" || malfiy == "")
+            //{
+            //    alert("Alanlar boş geçilemez");
+            //}
+            if (mik == "")
+            {
+                alert("Miktar alanı boş bırakılamaz !");
+            }
+            else if (fiy == "")
+            {
+                alert("Fiyat alanı boş bırakılamaz !");
+            }
+            else if (isk == "")
+            {
+                alert("Iskonto alanı boş bırakılamaz !");
+            }
+            else if (malfiy == "")
+            {
+                alert("Maliyet fiyatı alanı boş bırakılamaz !");
+            }
+            else {
+                if (maxMiktar >= mik) {
+                    var MaxIsk = @MaxIskonto.Replace(',', '.');
+
+                    if (isk <= MaxIsk) {
+                        $.ajax({
+                            url: '@Url.Action("KalemEkle", "Siparis")',
+                            type: 'POST',
+                            data: {
+                                FatNo: fat,
+                                Tarih: tar,
+                                Tip: tip,
+                                StokKodu: StokKod,
+                                StokIsim: stokAdi,
+                                Depo: depo,
+                                DepoAdi: depoad,
+                                Miktar: mik,
+                                Fiyat: fiy,
+                                MaliyetFiyat: malfiy,
+                                IskontoOran: isk,
+                                Bakiye: bakiye
+                            },
+                            success: function (data) {
+
+                                if (data.includes("Details")) {
+                                    window.location.href = data;
+                                }
+                                else {
+                                    alert(1);
+                                }
+                                
+                                
+
+
+                            },
+                            error: function (hata, ajaxOptions, thrownError) {
+                                alert(thrownError);
+                            }
+                        });
+                    }
+                    else {
+                        alert(@MaxIskonto.Replace(',', '.') + " 'dan daha çok indirim yapamazsınız.");
+                    }
+                } else {
+                    alert(maxMiktar + " 'dan fazla satılamaz'");
+                }
+            }
+
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $("#StokButtonClose").click(function () {
+            document.getElementById("Sira").value = "";
+            document.getElementById("GridLookupStok_I").value = "";
+            document.getElementById("StokAdi").value = "";
+            document.getElementById("Miktar").value = "";
+            document.getElementById("Fiyat").value = "";
+            document.getElementById("GridLookup_I").value = "";
+            document.getElementById("IskontoOrani").value = "";
+            document.getElementById("Tutar").value = "";
+            document.getElementById("MaliyetTutari").value = "";
+            document.getElementById("Bakiye").value = "";
+        });
+    });
+
+
+    $('#Depolar').attr("disabled", true);
+
+
+
+</script>
+
+<script type="text/javascript">
+    function Reloading() {
+        var StokKodu = document.getElementById("GridLookupStok_I").value;
+        $.ajax({
+            url: '@Url.Action("StokValues", "Siparis")',
+            type: 'GET',
+            data: {
+                StokKodu: StokKodu
+                  },
+            success: function (data) {
+                var data = JSON.parse(data);
+                if (data != "Hata") {
+                    values = [data.StokKodu, data.StokAdi, data.GrupKodu, data.Fiyat, data.KutuKati];
+                    OnGetRowValues(values);
+                }
+
+
+
+
+
+              },
+              error: function (hata, ajaxOptions, thrownError) {
+                 // alert(thrownError);
+              }
+        });
+    }
+
+</script>
+

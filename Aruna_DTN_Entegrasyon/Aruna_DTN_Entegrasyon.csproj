@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6008B889-D716-40EA-B445-2C6E24DE4E43}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aruna_DTN_Entegrasyon</RootNamespace>
+    <AssemblyName>Aruna_DTN_Entegrasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aruna.DataAccess">
+      <HintPath>..\..\Aruna_Et_Proje\Aruna_Et_Proje_UI\bin\Debug\Aruna.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Aruna.Utilities">
+      <HintPath>..\..\..\..\Desktop\Burda Bebek DLLs\Aruna.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Mvc5.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Web, Version=16.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NetOpenX.Rest.Client, Version=2.0.4.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\arunasrv\Netsis\ENTERPRISE9\NetOpenX.Rest.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\RaporController.cs" />
+    <Compile Include="Controllers\SaticiSiparisController.cs" />
+    <Compile Include="Controllers\SiparisController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\TeklifController.cs" />
+    <Compile Include="Filters\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BusinessLayer.cs" />
+    <Compile Include="Models\Cariler.cs" />
+    <Compile Include="Models\SaticiSiparisKalemler.cs" />
+    <Compile Include="Models\SiparisKalemler.cs" />
+    <Compile Include="Models\Siparisler.cs" />
+    <Compile Include="Models\Kullanicilar.cs" />
+    <Compile Include="Models\SiparisPrint.cs" />
+    <Compile Include="Models\Stoklar.cs" />
+    <Compile Include="Models\TeklifKalemler.cs" />
+    <Compile Include="Models\Teklifler.cs" />
+    <Compile Include="Models\TeklifPrint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\xptSiparisReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xptSiparisReport.Designer.cs">
+      <DependentUpon>xptSiparisReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrptTeklif.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrptTeklif.Designer.cs">
+      <DependentUpon>xrptTeklif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\BlokeCozViewModel.cs" />
+    <Compile Include="ViewModels\KalemViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\TeklifViewModel.cs" />
+    <Compile Include="ViewModels\YaslandirmaViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap-select.css" />
+    <Content Include="Content\css\bootstrap-select.min.css" />
+    <Content Include="Content\Login.css" />
+    <Content Include="Content\selectstyle.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\css\bootstrap-select.css.map" />
+    <Content Include="Images\DTN_Logo.png" />
+    <Content Include="Images\Vitra_Logo.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-1.12.4.intellisense.js" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <Content Include="Scripts\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\bootstrap-select.js" />
+    <Content Include="Scripts\js\bootstrap-select.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-ar_AR.js" />
+    <Content Include="Scripts\js\i18n\defaults-ar_AR.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-bg_BG.js" />
+    <Content Include="Scripts\js\i18n\defaults-bg_BG.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-cro_CRO.js" />
+    <Content Include="Scripts\js\i18n\defaults-cro_CRO.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-cs_CZ.js" />
+    <Content Include="Scripts\js\i18n\defaults-cs_CZ.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-da_DK.js" />
+    <Content Include="Scripts\js\i18n\defaults-da_DK.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-de_DE.js" />
+    <Content Include="Scripts\js\i18n\defaults-de_DE.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-en_US.js" />
+    <Content Include="Scripts\js\i18n\defaults-en_US.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-es_CL.js" />
+    <Content Include="Scripts\js\i18n\defaults-es_CL.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-es_ES.js" />
+    <Content Include="Scripts\js\i18n\defaults-es_ES.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-et_EE.js" />
+    <Content Include="Scripts\js\i18n\defaults-et_EE.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-eu.js" />
+    <Content Include="Scripts\js\i18n\defaults-eu.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-fa_IR.js" />
+    <Content Include="Scripts\js\i18n\defaults-fa_IR.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-fi_FI.js" />
+    <Content Include="Scripts\js\i18n\defaults-fi_FI.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-fr_FR.js" />
+    <Content Include="Scripts\js\i18n\defaults-fr_FR.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-hu_HU.js" />
+    <Content Include="Scripts\js\i18n\defaults-hu_HU.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-id_ID.js" />
+    <Content Include="Scripts\js\i18n\defaults-id_ID.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-it_IT.js" />
+    <Content Include="Scripts\js\i18n\defaults-it_IT.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-ja_JP.js" />
+    <Content Include="Scripts\js\i18n\defaults-ja_JP.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-kh_KM.js" />
+    <Content Include="Scripts\js\i18n\defaults-kh_KM.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-ko_KR.js" />
+    <Content Include="Scripts\js\i18n\defaults-ko_KR.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-lt_LT.js" />
+    <Content Include="Scripts\js\i18n\defaults-lt_LT.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-nb_NO.js" />
+    <Content Include="Scripts\js\i18n\defaults-nb_NO.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-nl_NL.js" />
+    <Content Include="Scripts\js\i18n\defaults-nl_NL.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-pl_PL.js" />
+    <Content Include="Scripts\js\i18n\defaults-pl_PL.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-pt_BR.js" />
+    <Content Include="Scripts\js\i18n\defaults-pt_BR.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-pt_PT.js" />
+    <Content Include="Scripts\js\i18n\defaults-pt_PT.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-ro_RO.js" />
+    <Content Include="Scripts\js\i18n\defaults-ro_RO.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-ru_RU.js" />
+    <Content Include="Scripts\js\i18n\defaults-ru_RU.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-sk_SK.js" />
+    <Content Include="Scripts\js\i18n\defaults-sk_SK.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-sl_SI.js" />
+    <Content Include="Scripts\js\i18n\defaults-sl_SI.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-sv_SE.js" />
+    <Content Include="Scripts\js\i18n\defaults-sv_SE.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-tr_TR.js" />
+    <Content Include="Scripts\js\i18n\defaults-tr_TR.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-ua_UA.js" />
+    <Content Include="Scripts\js\i18n\defaults-ua_UA.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-vi_VN.js" />
+    <Content Include="Scripts\js\i18n\defaults-vi_VN.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-zh_CN.js" />
+    <Content Include="Scripts\js\i18n\defaults-zh_CN.min.js" />
+    <Content Include="Scripts\js\i18n\defaults-zh_TW.js" />
+    <Content Include="Scripts\js\i18n\defaults-zh_TW.min.js" />
+    <Content Include="Scripts\Login.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\selectstyle.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Siparis\Index.cshtml" />
+    <Content Include="Views\Siparis\Create.cshtml" />
+    <Content Include="Views\Siparis\_GridViewPartialCariler.cshtml" />
+    <Content Include="Views\Siparis\CariOlustur.cshtml" />
+    <Content Include="Views\Siparis\Details.cshtml" />
+    <Content Include="Views\Siparis\_GridViewPartialKalemler.cshtml" />
+    <Content Include="Views\Siparis\_GridViewPartial.cshtml" />
+    <Content Include="Views\Siparis\_GridLookupPartialStok.cshtml" />
+    <Content Include="Views\Siparis\_GridLookupPartialYaslandirma.cshtml" />
+    <Content Include="Views\Siparis\_GridViewPartialSiparisKalem.cshtml" />
+    <Content Include="Views\Teklif\Index.cshtml" />
+    <Content Include="Views\Teklif\_GridViewPartialTeklifUst.cshtml" />
+    <Content Include="Views\Teklif\Details.cshtml" />
+    <Content Include="Views\Teklif\_GridViewPartialTeklifKalemler.cshtml" />
+    <Content Include="Views\Teklif\Create.cshtml" />
+    <Content Include="Views\Teklif\_GridLookupPartialStok.cshtml" />
+    <Content Include="Views\Teklif\_GridLookupPartialYaslandirma.cshtml" />
+    <Content Include="Views\Teklif\_GridViewPartialKalemler.cshtml" />
+    <Content Include="Views\Teklif\_GridViewPartialCariler.cshtml" />
+    <Content Include="Views\SaticiSiparis\Create.cshtml" />
+    <Content Include="Views\SaticiSiparis\_GridLookupPartialStok.cshtml" />
+    <Content Include="Views\SaticiSiparis\_GridViewPartialCariler.cshtml" />
+    <Content Include="Views\SaticiSiparis\_GridViewPartialSaticiSiparisKalem.cshtml" />
+    <Content Include="Views\Teklif\Print_v2.cshtml" />
+    <Content Include="Views\Admin\KullaniciTanim.cshtml" />
+    <Content Include="Views\Admin\Create.cshtml" />
+    <Content Include="Views\Admin\Edit.cshtml" />
+    <Content Include="Views\SaticiSiparis\_GridViewPartialKalemler.cshtml" />
+    <Content Include="Views\SaticiSiparis\_GridViewPartial.cshtml" />
+    <Content Include="Views\SaticiSiparis\Index.cshtml" />
+    <Content Include="Views\SaticiSiparis\Details.cshtml" />
+    <Content Include="Views\Teklif\Edit.cshtml" />
+    <Content Include="Views\Siparis\BlokeCoz.cshtml" />
+    <Content Include="Views\Siparis\_GridViewPartialBlokeCoz.cshtml" />
+    <Content Include="Views\Siparis\Bloke.cshtml" />
+    <Content Include="Views\Siparis\_GridViewPartialBloke.cshtml" />
+    <Content Include="Views\Rapor\Index.cshtml" />
+    <Content Include="Views\Rapor\_GridViewPartialRapor.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\GrupKoduTanim.cshtml" />
+    <Content Include="Views\Admin\GrupTanimEdit.cshtml" />
+    <Content Include="Views\Admin\GrupTanimCreate.cshtml" />
+    <Content Include="Views\Admin\RaporTanim.cshtml" />
+    <Content Include="Views\Admin\RaporTanimCreate.cshtml" />
+    <Content Include="Views\Admin\RaporTanimEdit.cshtml" />
+    <Content Include="Views\Siparis\KalemEkle.cshtml" />
+    <Content Include="Views\Teklif\Print.cshtml" />
+    <Content Include="Views\Teklif\PrintTeklif.cshtml" />
+    <Content Include="Views\Teklif\_DocumentViewerPartial.cshtml" />
+    <Content Include="Views\SaticiSiparis\KalemEkle.cshtml" />
+    <Content Include="Views\Siparis\Print.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.12.4.min.map" />
+    <Content Include="Scripts\js\bootstrap-select.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reports\xptSiparisReport.resx">
+      <DependentUpon>xptSiparisReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrptTeklif.resx">
+      <DependentUpon>xrptTeklif.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CommonQuery">
+      <Guid>{6F9EA625-48E0-4355-9838-F7C8DE95FC11}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CommonQuery50">
+      <Guid>{6F9EA625-48E0-4355-9838-F7C8DE95FC11}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="NetGraphLibrary">
+      <Guid>{301E1EC3-682B-427B-A230-9613E6C74378}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="NetOpenX50">
+      <Guid>{184B0A14-1416-44D7-978C-DECC4FC09693}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="NetsisCOMLibrary50">
+      <Guid>{B4DEC8C7-F03D-4595-86CF-68106B9F6462}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58469</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58469/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tanım Ekranları</h2>
+<br />
+<br />
+<br />
+
+@*<p><a href=/Siparis/Index class="btn btn-primary btn-lg">Siparişler &raquo;</a></p>*@
+@Html.ActionLink("Kullanıcı Tanımları >>", "KullaniciTanim", "Admin", null, new { @class = "btn btn-primary" }) <br />
+<br />
+@Html.ActionLink("Grup Tanımları >>", "GrupKoduTanim", "Admin", null, new { @class = "btn btn-primary" }) <br />
+<br />
+@Html.ActionLink("Rapor Tanımları >>", "RaporTanim", "Admin", null, new { @class = "btn btn-primary" }) <br />
+

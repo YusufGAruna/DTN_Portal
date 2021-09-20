@@ -1,0 +1,75 @@
+﻿@model List<Aruna_DTN_Entegrasyon.ViewModels.BlokeCozViewModel>
+@{
+    ViewBag.Title = "Bloke";
+}
+
+<style>
+    #ToBlokeCoz {
+        display: none;
+    }
+</style>
+
+
+<script>
+    function OnChecked(s, e) {
+
+        //var values = s.GetRowValues(e.visibleIndex, "Sira", SelectedItems);
+
+        var x = document.getElementById("ToBlokeCoz");
+
+        if (GridViewBloke.GetSelectedRowCount() > 0) {
+
+            x.style.display = "block";
+
+        } else {
+
+            x.style.display = "none";
+        }
+
+        
+        s.GetSelectedFieldValues("ID", GetSelected_Rows);
+
+    }
+
+    function GetSelected_Rows(values) {
+        document.getElementById('SelectedRows').value = values;
+
+    }
+    
+
+    $(document).ready(function () {
+        $("#ToBlokeCoz").click(function () {
+           
+            var array = document.getElementById('SelectedRows').value;
+            var StringArray = array.split(",");
+            var Url = "@Url.Action("BlokeCoz","Siparis")";
+            StringArray.forEach((arrayElement, index) => Url = Url + (index == 0 ? "?" : "&") + "SelectedRows=" + arrayElement);
+            
+
+            window.location.href = Url;
+
+
+        });
+    });
+</script>
+
+
+<br />
+<h2>Bloke Listesi</h2>
+<br />
+<br />
+<br />
+<br />
+
+
+<div id="ToBlokeCoz">
+
+    <button class="btn btn-primary">Blokelerini Çöz</button>
+
+</div>
+<br />
+<br />
+
+@Html.Hidden("SelectedRows")
+@Html.Action("GridViewPartialBloke")
+

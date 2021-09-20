@@ -1,0 +1,206 @@
+<script>
+    $(document).ready(function () {
+        document.getElementById("txt_0_I").addEventListener("blur", function () {
+            var currentValue = $("#txt_0_I").val();
+            var stokKodu = document.getElementById("GridViewBlokeCoz_DXDataRow0").childNodes[3].innerText;
+
+            $.ajax({
+                url: "@Url.Action("StokPaydasiGetir","Siparis")",
+                type: "GET",
+                data: { "stokKodu": stokKodu },
+                success: function (response) {
+                    var miktar = parseFloat(document.getElementById("GridViewBlokeCoz_DXDataRow0").childNodes[8].innerText);
+                    var res = parseFloat(response);
+                    var current = parseFloat(currentValue);
+                   
+                    if (res > 1 && current > 1) {
+                        //Eger tam sayi hesaplanmayacak ise bolen paydasindan kontrol ediyor. 
+                        var kontrol = (current / res).toFixed(2).split('.')[1];
+                        console.log("kontrol saglandi"+kontrol.toString())
+                        if (kontrol != "00") {
+
+                            var result = parseFloat((parseFloat(currentValue) / parseFloat(response))).toFixed(2);
+                            console.log("result :" + result);
+                            var lastValue = ((Math.floor(result) + 1) * response).toFixed(2);
+                            console.log("lastValue: " + lastValue);
+                            if (lastValue <= miktar) {
+                                $("#txt_0_I").val(lastValue);
+                            }
+                        }
+                    }else if (current == 1) {
+                        var result = current * res;
+                        $("#txt_0_I").val(result);
+                        console.log("elseifblogu");
+                    }
+
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log(textStatus, errorThrown);
+                }
+            });
+
+
+        });
+    });
+</script>
+
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridViewBlokeCoz";
+        settings.CallbackRouteValues = new { Controller = "Siparis", Action = "GridViewPartialBlokeCoz" };
+
+        settings.EnableCallbackAnimation = false;
+        settings.SettingsLoadingPanel.Text = "Lütfen Bekleyin";
+        //settings.SettingsPager.Visible = true;
+        //settings.Settings.ShowFooter = true;
+        settings.Settings.ShowGroupPanel = false;
+        //settings.Settings.ShowFilterRow = true;
+        //settings.Settings.AutoFilterCondition = AutoFilterCondition.Contains;
+        //settings.Settings.ShowHeaderFilterButton = true;
+        //settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+
+
+        settings.SettingsBehavior.AllowGroup = false;
+        settings.SettingsBehavior.AllowSort = false;
+        settings.SettingsBehavior.AllowDragDrop = false;
+        //settings.SettingsBehavior.FilterRowMode = GridViewFilterRowMode.Auto;
+        //settings.SettingsText.GroupPanel = "Kayýtlarý gruplamak için kolon baþlýðýný bu alana sürükleyip býrakýn";
+
+        settings.SettingsPager.PageSize = 1000;
+        settings.Styles.AlternatingRow.BackColor = System.Drawing.Color.AliceBlue;
+        settings.Styles.Header.BackColor = System.Drawing.Color.LightSkyBlue;
+        settings.Styles.Header.ForeColor = System.Drawing.Color.Black;
+        settings.KeyFieldName = "ID";
+
+
+        settings.Columns.Add("SubeKodu");
+        //settings.Columns.Add("SiparisNo");
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "SiparisNo";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        });
+
+        //settings.Columns.Add("StokKodu");
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokKodu";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        });
+        //settings.Columns.Add("StokAdi");
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokAdi";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        });
+        settings.Columns.Add("Sira");
+        settings.Columns.Add("CariKodu");
+        //settings.Columns.Add("CariAdi");
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CariAdi";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        });
+        settings.Columns.Add("Miktar");
+
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(diTemplate =>
+            {
+                GridViewDataItemTemplateContainer container = diTemplate as GridViewDataItemTemplateContainer;
+                Html.DevExpress().TextBox(edit =>
+                {
+                    edit.Name = string.Format("txt_{0}", diTemplate.VisibleIndex);
+                    edit.Properties.MaskSettings.Mask = "<0..1000>.<00..999999>";
+                    edit.Properties.ClientSideEvents.ValueChanged = string.Format("function(s, e) {{OnBloke(s, e, '{0}'); }}", container.KeyValue.ToString());
+            //edit.Properties.ClientSideEvents.GotFocus = string.Format("function(s, e) {{OnClick(s, e, '{0}'); }}", container.KeyValue.ToString());
+            //edit.Properties.ClientSideEvents.GotFocus = string.Format("function(s, e) {{On(s, e, '{0}'); }}", container.KeyValue.ToString());
+
+        }).Render();
+            });
+        });
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(c =>
+            {
+                ViewContext.Writer.Write(string.Format("<button  type =\"button\" id = \"btn_{0}\" class=\"btn btn-info btn-sm\" data-id='{0}' onclick=\"OnKilit(this);\"> Kitle</button >", c.KeyValue));
+            });
+        });
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(c =>
+            {
+                ViewContext.Writer.Write(string.Format("<button   type =\"button\" id = \"btnCoz_{0}\" class=\"btn btn-danger btn-sm\" data-id='{0}' style=\"display: none\" onclick=\"OnCoz(this);\"> Kilit Çöz</button >", c.KeyValue));
+            });
+        });
+
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()
+
+<script>
+    @*function OnBloke(s,e) {
+        var idObj = $(sender).data();
+        //console.log(data);
+        console.log(sender);
+        var Table = document.getElementById("GridViewBlokeCoz_DXDataRow" + idObj.id.split(',')[1]);
+
+        var innerTable = Table.getElementsByTagName("td");
+        var MaxMiktar = innerTable[2].innerText;
+        var miktar = document.getElementById("txt_" + idObj.id.split(',')[1] + "_I").value;
+        miktar = miktar.replace(',','.');
+        MaxMiktar = MaxMiktar.replace(',', '.');
+        if (parseFloat(miktar) > parseFloat(MaxMiktar)) {
+
+            console.log("Girilen Miktar Var Olandan Büyük Olamaz.");
+        }
+        else {
+            $.ajax({
+                url: '@Url.Action("BlokeCozme", "Siparis")',
+                type: 'GET',
+                data: {
+                    ID: idObj.id.split(',')[0],
+                    Miktar: miktar
+                },
+                success: function (data) {
+                    alert(data);
+                    GridViewBlokeCoz.Refresh();
+                },
+                error: function (hata, ajaxOptions, thrownError) {
+                }
+            });
+        }
+
+
+    }*@
+
+
+
+    function OnBloke(s, e, Key) {
+
+        var Table = document.getElementById("GridViewBlokeCoz_DXDataRow" + Key);
+
+        var innerTable = Table.getElementsByTagName("td");
+        var MaxMiktar = innerTable[7].innerText;
+        var miktar = document.getElementById("txt_" + Key + "_I").value;
+        miktar = miktar.replace(',', '.');
+        MaxMiktar = MaxMiktar.replace(',', '.');
+
+        if (parseFloat(miktar) > parseFloat(MaxMiktar)) {
+
+            alert("Girilen Miktar Var Olandan Büyük Olamaz.");
+            document.getElementById("txt_" + Key + "_I").value = MaxMiktar;
+        }
+    }
+
+
+</script>
+
+

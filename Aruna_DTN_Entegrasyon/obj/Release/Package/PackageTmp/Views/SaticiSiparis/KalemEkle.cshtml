@@ -1,0 +1,274 @@
+﻿@model Aruna_DTN_Entegrasyon.ViewModels.KalemViewModel
+
+@{
+    ViewBag.Title = "KalemEkle";
+
+    var Kullanici = ViewBag.Kullanici;
+    //string MaxIskonto = Convert.ToString(Kullanici.IskontoOran);
+}
+
+<style>
+    .w55 {
+        width: 25%;
+    }
+</style>
+
+
+<script type="text/javascript">
+
+    function OnSelectionChanged(s, e) {
+        s.GetRowValues(e.visibleIndex, "StokKodu;StokAdi;GrupKodu;Fiyat;KutuKati", OnGetRowValues);
+    }
+    function OnGetRowValues(values) {
+        document.getElementById("GridLookupStok_I").value = values[0];
+        document.getElementById("StokAdi").value = values[1];
+        document.getElementById("Fiyat").value = values[3];
+        document.getElementById("KutuKati").value = values[4];
+
+
+
+        $.ajax({
+               url: '@Url.Action("BakiyeResult", "SaticiSiparis")',
+               type: 'GET',
+            data: {
+                StokKodu: values[0]
+                },
+            success: function (data) {
+
+                document.getElementById("Bakiye").value = data;
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+        });
+
+
+
+    }
+</script>
+
+<script>
+    function MiktarChanged() {
+        document.getElementById("Tutar").value = document.getElementById("Miktar").value * document.getElementById("Fiyat").value;
+    }
+    function FiyatChanged() {
+        document.getElementById("Tutar").value = document.getElementById("Miktar").value * document.getElementById("Fiyat").value;
+    }
+
+</script>
+
+
+<script>
+    function MiktarChanged() {
+        //document.getElementById("MaliyetTutari").value = document.getElementById("Miktar").value * document.getElementById("GridLookup_I").value;
+        document.getElementById("Tutar").value = document.getElementById("Miktar").value * document.getElementById("Fiyat").value;
+    }
+
+</script>
+
+<script>
+    function FiyatChanged() {
+        //document.getElementById("MaliyetTutari").value = document.getElementById("Miktar").value * document.getElementById("GridLookup_I").value;
+        document.getElementById("Tutar").value = document.getElementById("Miktar").value * document.getElementById("Fiyat").value;
+    }
+
+</script>
+
+
+<h2>Kalem Ekleme</h2>
+
+
+<br />
+<br />
+
+
+@Html.Hidden("MaxMiktar", 0)
+
+@Html.Hidden("KutuKati", 0)
+
+
+<div class="form-group">
+    @Html.Label("Sipariş Numarası", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.TextBox("FatNo", TempData["FatNo"].ToString(), htmlAttributes: new { @class = "form-control", @readonly = "readonly" })
+
+</div>
+
+<div class="form-group">
+    @Html.Label("Tarih", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.TextBox("Tarih", TempData["Tarih"].ToString(), htmlAttributes: new { @class = "form-control", @readonly = "readonly" })
+
+</div>
+
+
+<br />
+
+
+<div class="form-group">
+    @Html.Label("Depo Kodu", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.DropDownList("Depolar", TempData["Depolar"] as List<SelectListItem>, htmlAttributes: new { @class = "form-control" })
+</div>
+
+
+<div class="form-group">
+    @Html.Label("Stok Kodu", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @*@Html.Editor("StokKodu", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1", @value = "1" } })*@
+
+
+    <div>
+        @Html.Action("GridLookupPartialStok")
+    </div>
+
+    @*@Html.DropDownList("StokKodu", null, htmlAttributes: new { @class = "form-control selectpicker" })*@
+</div>
+
+<div class="form-group">
+    @Html.Label("Stok Adı", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("StokAdi", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+</div>
+
+
+<div class="form-group">
+    @Html.Label("Miktar", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("Miktar", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1", @value = "1", @onchange = "MiktarChanged()" } })
+</div>
+<div class="form-group">
+    @Html.Label("Fiyat", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("Fiyat", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1.00", @value = "1.00", @onchange = "FiyatChanged()" } })
+</div>
+<div class="form-group">
+    @Html.Label("Tutar", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("Tutar", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+</div>
+<div class="form-group">
+    @Html.Label("Toplam Bakiye", htmlAttributes: new { @class = "control-label col-md-4" })
+
+    @Html.Editor("Bakiye", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+</div>
+
+
+<br />
+
+<div class="form-group">
+    <input type="submit" id="StokButton" value="Kaydet" class="btn btn-default" />
+</div>
+
+<div>
+    @Html.ActionLink("Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+</div>
+<br />
+
+
+
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#StokButton").click(function () {
+            var StokKod = $("#GridLookupStok_I").val();
+            var stokAdi = $("#StokAdi").val();
+            var x = document.getElementById("Depolar");
+
+            var depo = x.options[x.selectedIndex].value;
+
+                var mik = $("#Miktar").val();
+                var kutu = document.getElementById('KutuKati').value;
+            console.log(kutu);
+            console.log(mik);
+
+                if (kutu != 1 && mik % kutu != 0) {
+                    mik = (parseInt(mik / kutu) + 1) * kutu;
+                    alert('Kutu Katına tamamlanmıştır.');
+                }
+                document.getElementById('Miktar').value = mik;
+
+
+                var maxMiktar = document.getElementById('MaxMiktar').value;
+
+                mik = parseFloat(mik.toString().replace(',', '.'));
+
+                maxMiktar = parseFloat(maxMiktar.replace(',', '.'));
+
+                var fat = $("#FatNo").val();
+                var fiy = $("#Fiyat").val();
+                var tar = $("#Tarih").val();
+                if (mik == "" || fiy == "") {
+                    alert("Alanlar boş geçilemez");
+                } else {
+                    $.ajax({
+                        url: '@Url.Action("KalemEkle", "SaticiSiparis")',
+                        type: 'POST',
+                        data: {
+                            FatNo: fat,
+                            Tarih: tar,
+                            DepoKodu: depo,
+                            StokKodu: StokKod,
+                            StokIsim: stokAdi,
+                            Miktar: mik,
+                            Fiyat: fiy
+                        },
+                        success: function (data) {
+
+                            if (data.includes("Details")) {
+                                window.location.href = data;
+                            }
+                            else {
+                                alert(data);
+                            }
+                        },
+                        error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                        }
+                    });
+                }
+
+
+        });
+    });
+
+
+    $('#Tarih').attr("disabled", true);
+
+</script>
+
+
+
+<script type="text/javascript">
+    function Reloading() {
+        var StokKodu = document.getElementById("GridLookupStok_I").value;
+        $.ajax({
+            url: '@Url.Action("StokValues", "SaticiSiparis")',
+            type: 'GET',
+            data: {
+                StokKodu: StokKodu
+                  },
+            success: function (data) {
+                var data = JSON.parse(data);
+                if (data != "Hata") {
+                    values = [data.StokKodu, data.StokAdi, data.GrupKodu, data.Fiyat, data.KutuKati];
+                    OnGetRowValues(values);
+                }
+
+
+
+
+
+              },
+              error: function (hata, ajaxOptions, thrownError) {
+                 // alert(thrownError);
+              }
+        });
+    }
+
+</script>
+

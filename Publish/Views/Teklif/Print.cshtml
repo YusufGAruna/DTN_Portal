@@ -1,0 +1,348 @@
+﻿@model Aruna_DTN_Entegrasyon.ViewModels.TeklifViewModel
+
+@{
+    ViewBag.Title = "Print";
+}
+
+<h2>DTN Teklif</h2>
+
+
+
+
+<div id="container">
+    <style type="text/css">
+        .col-print-1 {
+            width: 8%;
+            float: left;
+            padding-right: 15px;
+        }
+
+        .col-print-2 {
+            width: 16%;
+            float: left;
+        }
+
+        .col-print-3 {
+            width: 25%;
+            float: left;
+        }
+
+        .col-print-4 {
+            width: 33%;
+            float: left;
+        }
+
+        .col-print-5 {
+            width: 42%;
+            float: left;
+        }
+
+        .col-print-6 {
+            width: 50%;
+            float: left;
+            padding-left: 15px;
+        }
+
+        .col-print-7 {
+            width: 58%;
+            float: left;
+        }
+
+        .col-print-8 {
+            width: 66%;
+            float: left;
+        }
+
+        .col-print-9 {
+            width: 75%;
+            float: left;
+        }
+
+        .col-print-10 {
+            width: 83%;
+            float: left;
+            padding-left: 15px;
+        }
+
+        .col-print-11 {
+            width: 92%;
+            float: left;
+        }
+
+        .col-print-12 {
+            width: 100%;
+            float: left;
+        }
+
+        #Pupila {
+            height: 154px;
+        }
+    </style>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @if (!string.IsNullOrEmpty(ViewBag.Error))
+        {
+            <div class="alert alert-danger">
+                <strong>@ViewBag.Error</strong>
+            </div>
+        }
+        <br />
+        <h4><b>Üst Bilgiler</b></h4>
+
+        <br />
+        <div class="form-group">
+            @Html.Label("Teklif Numarası", new { @class = "control-label col-print-2" })
+            <div class="col-print-10">
+                @Html.EditorFor(model => model.FatNo, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.FatNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+            @Html.Label("Satın Alan", htmlAttributes: new { @class = "control-label col-print-2" })
+            <div class="col-print-10">
+                @Html.EditorFor(model => model.CariIsim, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.CariIsim, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+            @Html.Label("Gecerlilik Tarihi", htmlAttributes: new { @class = "control-label col-print-2" })
+            <div class="col-print-10">
+                @Html.EditorFor(model => model.GecerlilikTarihi, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.GecerlilikTarihi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Tarih, htmlAttributes: new { @class = "control-label col-print-2" })
+            <div class="col-print-10">
+                @Html.EditorFor(model => model.Tarih, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.Tarih, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+            @Html.Label("Plasiyer", new { @class = "control-label col-print-2" })
+            <div class="col-print-10">
+                @Html.EditorFor(model => model.PlasiyerAd, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.PlasiyerAd, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Açıklama Sahası", new { @class = "control-label col-print-2" })
+            <div class="col-print-10">
+                @Html.TextAreaFor(model => model.AciklamaSahasi, new { @class = "form-control", @readonly = "readonly" } )
+                @Html.ValidationMessageFor(model => model.AciklamaSahasi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+        <br />
+
+        @*<h4><b>Tarih</b></h4>*@
+
+        @*<div class="col-print-6">
+            <div class="form-group">
+                @Html.Label("Gecerlilik Tarihi", htmlAttributes: new { @class = "control-label col-print-2" })
+                <div class="col-print-10">
+                    @Html.EditorFor(model => model., new { htmlAttributes = new { @class = "form-control", @style = "margin-left:10px", @readonly = "readonly" } })
+                    @Html.ValidationMessageFor(model => model.GecerlilikTarihi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>>*@
+
+        <hr class="invisible" />
+
+        <h4><b>Ürün Bilgileri</b></h4>
+        <br />
+
+
+        <div id="PartialPart" class="col-print-12">
+            <div id="partToBeReplacedWithLoadData">
+                <table class="table col-print-12">
+                    <tr>
+                        <th>
+                            @Html.DisplayName("Stok Kodu")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Stok Adı")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Miktar")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Fiyat")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Iskonto Oran")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Toplam Tutar")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Iskontolu Tutar")
+                        </th>
+
+                    </tr>
+
+                    @foreach (var item in (List<Aruna_DTN_Entegrasyon.Models.TeklifKalemler>)TempData["Kalemler"])
+                    {
+
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.StokKodu)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.StokAd)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Miktar)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Fiyat)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IskontoOran)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ToplamTutar)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IskontoluTutar)
+                            </td>
+                        </tr>
+                    }
+
+                    @*<tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Total Fiyat:</td>
+                        <td>
+                            @total
+                        </td>
+                    </tr>*@
+
+                </table>
+            </div>
+        </div>
+        <hr />
+        <br />
+
+
+        <br />
+
+        @*<div id="PartialPaymentPart" class="col-print-12">
+            <div id="partToBeReplacedWithLoadDataPayment">
+
+                <table class="table col-print-12">
+                    <tr>
+                        <th>
+                            @Html.DisplayName("Ödeme Tipi")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Tutar")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Taksit Sayısı")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Banka Adı")
+                        </th>
+                        <th>
+                            @Html.DisplayName("Ödeme Tarihi")
+                        </th>
+                    </tr>
+
+                    @foreach (var item in (List<Aruna_EriskinOptik_Web.ViewModels.FormOdemeViewModel>)TempData["PaymentModel"])
+                    {
+                        totalOdeme += item.Tutar;
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OdemeTipi)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Tutar)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TaksitSayisi)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BankaAdi)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OdemeTarihi)
+                            </td>
+                        </tr>
+                    }
+                    <tr>
+                        <td>Total Fiyat:</td>
+                        <td>@total</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>*@
+
+
+    </div>
+    }
+</div>
+<br />
+<br />
+<p>
+    <button id="print" class="btn btn-primary">Çıktı Al</button>
+    <br />
+    <br />
+    @Html.ActionLink("Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+    
+</p>
+
+
+
+<script type="text/javascript">
+
+    $('#print').click(function () {
+
+        var divToPrint = document.getElementById('container');
+
+        var newWin = window.open('', 'Print-Window');
+
+        var FatNo = document.getElementById('FatNo').value;
+        console.log(FatNo);
+        newWin.document.open();
+        //newWin.document.write('<base href="' + location.origin + location.pathname + '">');
+
+        newWin.document.write('<html><head><link href="../../Content/Site.css" rel="stylesheet" type="text/css" /><link href="../../Content/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="../../Content/themes/base/jquery-ui.min.css" rel="stylesheet" /><link href="../../Content/css/bootstrap-select.min.css" rel="stylesheet" /><style>.topcorner{position:absolute;top:0;right:0;font-size:19px;}  .table tr,td {height:1px;font-size:12px;} .table tr, td .form-control {height: 25px;padding: 1px 12px;} body {margin: 0px;padding: 0px;}</style></head><body onload="window.print()"><div class="container"><img src="http://dtninsaat.com/images/uploads/732bb8c3328d7c041edda0ffb1766151.png" style="height:60px"> <div class="topcorner">Form No: ' + FatNo + '</div>' + divToPrint.innerHTML + '<div></body ></html >');
+        newWin.document.close();
+
+        setTimeout(function () { newWin.close(); }, 10);
+    });
+
+</script>

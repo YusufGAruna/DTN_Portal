@@ -1,0 +1,156 @@
+@{
+    var grid = Html.DevExpress().GridView(settings => {
+        settings.Name = "GridViewTeklifKalemler";
+        settings.CallbackRouteValues = new { Controller = "Teklif", Action = "GridViewPartialTeklifKalemler" };
+
+        settings.KeyFieldName = "Sira";
+
+
+        //settings.SettingsPager.Visible = false;
+        settings.Settings.ShowGroupPanel = false;
+        settings.Settings.ShowFilterRow = false;
+        settings.SettingsBehavior.AllowSelectByRowClick = false;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+
+        //settings.Columns.Add("FatNo");
+        settings.Columns.Add("Sira");
+        //settings.Columns.Add("Cari_Kod");
+        //settings.Columns.Add("Cari_Isim");
+
+        //settings.Columns.Add("Tarih").PropertiesEdit.DisplayFormatString = "d";
+        //settings.Columns.Add("StokKodu");
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokKodu";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+
+        //settings.Columns.Add("StokIsim");
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokIsim";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+        settings.Columns.Add("Miktar").PropertiesEdit.DisplayFormatString = "n";
+        settings.Columns.Add("Fiyat").PropertiesEdit.DisplayFormatString = "n";
+        settings.Columns.Add("MaliyetFiyat").PropertiesEdit.DisplayFormatString = "n";
+        //settings.Columns.Add("BrutFiyat").PropertiesEdit.DisplayFormatString = "c";
+        settings.Columns.Add("IskontoOran").PropertiesEdit.DisplayFormatString = "n";
+        settings.Columns.Add("IskontoluTutar").PropertiesEdit.DisplayFormatString = "n";
+        //settings.Columns.Add("Kdv");
+        settings.Columns.Add("ToplamTutar").PropertiesEdit.DisplayFormatString = "n";
+        settings.Columns.Add("ToplamMaliyetTutar").PropertiesEdit.DisplayFormatString = "n";
+        settings.Columns.Add("DepoKodu");
+        settings.Columns.Add("DepoAdi");
+
+        settings.Columns.Add("ToplamKDVliTutar");
+        settings.Columns.Add("Bakiye").PropertiesEdit.DisplayFormatString = "n";
+
+
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(c =>
+            {
+                ViewContext.Writer.Write(string.Format("<span class=\"btn btn-info btn-sm\" data-id='{0}' onclick=\"KalemEdit(this);\"> Düzenle</span>", c.KeyValue));
+            });
+        });
+
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(c =>
+            {
+                ViewContext.Writer.Write(string.Format("<span class=\"btn btn-danger btn-sm\" data-id='{0}' onclick=\"KalemDelete(this);\"> Sil</span>", c.KeyValue));
+            });
+        });
+    });
+    if (ViewData["EditError"] != null){
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()
+
+
+<script>
+
+    function KalemDelete(sender) {
+        var idObj = $(sender).data();
+        $.ajax({
+               url: '@Url.Action("GridViewPartialTeklifKalemDelete", "Teklif")',
+               type: 'GET',
+            data: {
+                id: idObj.id
+                },
+            success: function (data) {
+
+                GridViewTeklifKalemler.Refresh();
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+         });
+    }
+
+    function KalemEdit(sender) {
+        var idObj = $(sender).data();
+        $("#AddKalemButton").trigger('click');
+
+        $.ajax({
+               url: '@Url.Action("GetAddedKalem", "Teklif")',
+               type: 'GET',
+            data: {
+                id: idObj.id
+                },
+            success: function (data) {
+                var Stok = JSON.parse(data);
+                if ('null' != Stok.Sira) {
+                    document.getElementById("Sira").value = Stok.Sira;
+                }
+                if ('null' != Stok.StokKodu) {
+                    document.getElementById("GridLookupStok_I").value = Stok.StokKodu;
+                }
+                if ('null' != Stok.StokIsim) {
+                    document.getElementById("StokAdi").value = Stok.StokIsim;
+                }
+                if ('null' != Stok.Miktar) {
+                    document.getElementById("Miktar").value = Stok.Miktar;
+                }
+                if ('null' != Stok.Fiyat) {
+                    document.getElementById("Fiyat").value = Stok.Fiyat;
+                }
+                //if ('null' != Stok.MaliyetFiyat) {
+                //    document.getElementById("GridLookup_I").value = Stok.MaliyetFiyat;
+                //}
+                if ('null' != Stok.IskontoOran) {
+                    document.getElementById("IskontoOrani").value = Stok.IskontoOran;
+                }
+                //if ('null' != Stok.IskontoluTutar) {
+                //    document.getElementById("IskontoOrani").value = Stok.IskontoOrani;
+                //}
+                //if ('null' != Stok.ToplamTutar) {
+                //    document.getElementById("Tutar").value = Stok.ToplamTutar;
+                //}
+                //if ('null' != Stok.ToplamMaliyetTutar) {
+                //    document.getElementById("MaliyetTutari").value = Stok.ToplamMaliyetTutar;
+                //}
+                if ('null' != Stok.Bakiye) {
+                    document.getElementById("Bakiye").value = Stok.Bakiye;
+                }
+                
+
+
+                GridViewTeklifKalemler.Refresh();
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+         });
+    }
+</script>

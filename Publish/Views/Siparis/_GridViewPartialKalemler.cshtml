@@ -1,0 +1,144 @@
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridView";
+        settings.CallbackRouteValues = new
+        {
+            Controller = "Siparis",
+            Action = "GridViewPartialKalemler" };
+
+
+        settings.KeyFieldName = "Sira";
+
+        //settings.EnableCallbackAnimation = false;
+        settings.SettingsLoadingPanel.Text = "Lütfen Bekleyin";
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowFooter = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+
+        //settings.Settings.ShowHeaderFilterButton = true;
+        //settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        //settings.CommandColumn.ShowEditButton = true;
+
+        //settings.SettingsBehavior.AllowGroup = true;
+        //settings.SettingsBehavior.AllowSort = true;
+        //settings.SettingsBehavior.FilterRowMode = GridViewFilterRowMode.Auto;
+        settings.SettingsBehavior.AllowDragDrop = false;
+        settings.SettingsText.GroupPanel = "Kayýtlarý gruplamak için kolon baþlýðýný bu alana sürükleyip býrakýn";
+
+        settings.SettingsPager.PageSize = 100;
+        settings.Styles.AlternatingRow.BackColor = System.Drawing.Color.AliceBlue;
+        settings.Styles.Header.BackColor = System.Drawing.Color.LightSkyBlue;
+        settings.Styles.Header.ForeColor = System.Drawing.Color.Black;
+
+        settings.Columns.Add("Sira");
+        settings.Columns.Add("FatNo");
+        settings.Columns.Add("Cari_Kod");
+        settings.Columns.Add("Cari_Isim");
+        //settings.Columns.Add("Tarih");
+ 	settings.Columns.Add(column =>
+        {
+            column.FieldName = "Tarih";
+            column.ColumnType = MVCxGridViewColumnType.DateEdit;
+            column.PropertiesEdit.DisplayFormatString = "dd.MM.yyyy";
+        });
+
+        //settings.Columns.Add("StokKodu");
+	settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokKodu";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+
+        //settings.Columns.Add("StokAd");
+	settings.Columns.Add(column =>
+        {
+            column.FieldName = "StokAd";
+            column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+        } );
+        settings.Columns.Add("Miktar");
+        settings.Columns.Add("NetFiyat");
+        settings.Columns.Add("BrutFiyat");
+        settings.Columns.Add("Iskonto");
+        settings.Columns.Add("Kdv");
+        settings.Columns.Add("Tutar");
+        settings.Columns.Add("ToplamKdv");
+        settings.Columns.Add("KdvliTutar");
+        settings.Columns.Add("IsExist").Caption = "Hareket Durumu";
+
+
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(c => Html.DevExpress().Button(settingsBtn =>
+            {
+                settingsBtn.Name = "btnKapat" + c.KeyValue;
+                settingsBtn.Text = "Kapat";
+                settingsBtn.ControlStyle.CssClass = "btn btn-secondary btn-sm";
+                settingsBtn.Styles.Native = true;
+                settingsBtn.ClientSideEvents.Click = string.Format("function(s, e) {{ CustomButtonKapatClick(s, e); }}");
+            }).Render());
+
+        });
+
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(c => Html.DevExpress().Button(settingsBtn =>
+            {
+                settingsBtn.Name = "btn" + c.KeyValue;
+                settingsBtn.Text = "Sil";
+                settingsBtn.ControlStyle.CssClass = "btn btn-danger btn-sm";
+                settingsBtn.Styles.Native = true;
+                settingsBtn.ClientSideEvents.Click = string.Format("function(s, e) {{ CustomButtonClick(s, e); }}");
+            }).Render());
+
+        });
+
+    });
+}
+@grid.Bind(Model).GetHtml()
+
+<script type="text/javascript">
+
+    function CustomButtonClick(s, e) {
+        str = s.name.substring(3);
+
+        $.ajax({
+               url: '@Url.Action("IsExistControl", "Siparis")',
+               type: 'GET',
+            data: {
+                id: str
+                },
+            success: function (data) {
+
+                alert(data);
+                GridView.Refresh();
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+        });
+    }
+
+    function CustomButtonKapatClick(s, e) {
+        str = s.name.substring(8);
+
+        $.ajax({
+               url: '@Url.Action("KalemKapat", "Siparis")',
+               type: 'GET',
+            data: {
+                id: str
+                },
+            success: function (data) {
+
+                alert(data);
+                GridView.Refresh();
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+        });
+    }
+
+</script>

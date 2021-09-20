@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detaylar</h2>
+
+
+<br />
+@Html.ActionLink("Yeni Kalem Ekle", "KalemEkle", new { id = Model }, new { @class = "btn btn-primary" })
+<br />
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        @Html.Action("GridViewPartialKalemler")
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+</p>
+
+

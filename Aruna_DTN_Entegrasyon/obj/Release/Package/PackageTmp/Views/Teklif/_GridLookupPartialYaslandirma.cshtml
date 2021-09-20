@@ -1,0 +1,35 @@
+@{
+    var gridLookup = Html.DevExpress().GridLookup(settings => {
+        settings.Name = "GridLookup";
+        settings.KeyFieldName = "Sira";
+
+        settings.GridViewProperties.CallbackRouteValues = new { Controller = "Teklif", Action = "GridLookupPartialYaslandirma" };
+        settings.Properties.SelectionMode = GridLookupSelectionMode.Single;
+        settings.Properties.TextFormatString = "{0}";
+
+        settings.GridViewProperties.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        //settings.GridViewProperties.SettingsBehavior.ConfirmDelete = true;
+
+        settings.ControlStyle.CssClass = "form-control col-md-offset-4 w55";
+
+        settings.GridViewProperties.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.GridViewProperties.SettingsBehavior.ConfirmDelete = true;
+        settings.GridViewProperties.Settings.ShowFilterRow = true;
+
+
+        settings.GridViewClientSideEvents.FocusedRowChanged = "OnGridFocusedYas";
+
+        
+        settings.Columns.Add("Fiyat").PropertiesEdit.DisplayFormatString = "n";
+        settings.Columns.Add("Tarih").PropertiesEdit.DisplayFormatString = "dd.MM.yyyy";
+        settings.Columns.Add("Miktar").PropertiesEdit.DisplayFormatString = "n";
+        settings.Columns.Add("StokKodu");
+        settings.Columns.Add("DepoKodu");
+        settings.Columns.Add("D_S");
+        settings.Columns.Add("Sira");
+    });
+    //if (ViewData["EditError"] != null){
+    //    gridLookup.SetEditErrorText((string)ViewData["EditError"]);
+    //}
+}
+@gridLookup.BindList(Model).GetHtml()

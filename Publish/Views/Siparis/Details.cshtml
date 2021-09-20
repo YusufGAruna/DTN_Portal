@@ -1,0 +1,45 @@
+﻿
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detaylar</h2>
+<br />
+
+@Html.ActionLink("Yeni Kalem Ekle", "KalemEkle", new { id = Model }, new { @class = "btn btn-primary" })
+
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        @Html.Action("GridViewPartialKalemler")
+
+
+    </dl>
+
+
+    <br />
+    <br />
+    @*<div class="row">
+        <div class="col text-right">
+            <div>
+
+                @Html.Label("E-Posta", htmlAttributes: new { @class = "control-label" })
+                @Html.Editor("xxxx", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+
+            </div>
+           
+            </div>
+    </div>*@
+
+
+</div>
+<br /><br />
+<br />
+<p>
+    @Html.ActionLink("Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+</p>
+
+

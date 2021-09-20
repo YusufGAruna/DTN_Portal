@@ -1,0 +1,9 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Aruna_DTN_Entegrasyon.Reports.xptSiparisReport
+
+@Html.DevExpress().WebDocumentViewer(settings => {
+                                                     settings.Name = "WebDocumentViewer";
+}).Bind(Model).GetHtml()

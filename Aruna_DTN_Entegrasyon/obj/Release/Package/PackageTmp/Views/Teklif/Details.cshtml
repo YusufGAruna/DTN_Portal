@@ -1,0 +1,154 @@
+﻿@model List<Aruna_DTN_Entegrasyon.Models.TeklifKalemler>
+
+@{
+    ViewBag.Title = "Details";
+    var id = TempData["FatNo"];
+
+}
+
+<style>
+    #ToSiparisButton {
+        display: none;
+    }
+</style>
+
+
+
+<script type="text/javascript">
+    function SelectionChanged(s, e) {
+
+            //var values = s.GetRowValues(e.visibleIndex, "Sira", SelectedItems);
+
+        var x = document.getElementById("ToSiparisButton");
+        if (GridView.GetSelectedRowCount() > 0) {
+
+                x.style.display = "block";
+
+        } else {
+
+                x.style.display = "none";
+        }
+
+        s.GetSelectedFieldValues("Sira", GetSelected_Rows);
+
+        s.GetSelectedFieldValues("Sira;FatNo", GetSelected);
+
+    }
+
+    function GetSelected(values) {
+        document.getElementById('FatNo').value = values[0][1];
+
+    }
+    function GetSelected_Rows(values) {
+        document.getElementById('SelectedRows').value = values;
+
+    }
+    function OnGetRowValues(values) {
+
+        $('#partialYaslandirma').load('@Url.Action("PartialYaslandirmaMethod", "Teklif")', { StokKodu: values[0] });
+
+
+        $.ajax({
+               url: '@Url.Action("BakiyeResult", "Teklif")',
+               type: 'GET',
+            data: {
+                StokKodu: values[0]
+                },
+            success: function (data) {
+
+                document.getElementById("Bakiye").value = data;
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+         });
+    }
+</script>
+
+@Html.Hidden("SelectedRows")
+@Html.Hidden("FatNo")
+<h2>Detaylar</h2>
+
+<br />
+
+<br />
+<br />
+<div id="ToSiparisButton">
+    @*@Html.ActionLink("", "ToSiparis", null, new { @class = "btn btn-primary" })*@
+    <button class="btn btn-primary">Siparişe Dönüştür</button>
+
+</div>
+<br />
+<br />
+@*<div>
+    @Html.ActionLink("", "ToSiparis", null, new { @class = "btn btn-primary" })
+    <button id="toPrint" class="btn btn-primary">Çıktı Al</button>
+
+</div>*@
+
+<br />
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+
+        @Html.Action("GridViewPartialKalemler")
+
+
+
+    </dl>
+</div>
+
+<div class="container">
+
+</div>
+<p>
+    @Html.ActionLink("Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+</p>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#ToSiparisButton").click(function () {
+            var Fat = document.getElementById('FatNo').value;
+            var array = document.getElementById('SelectedRows').value;
+            var StringArray = array.split(",");
+            var Url = "@Url.Action("Create","Siparis")?TekNo=" + Fat;
+            
+
+            StringArray.forEach(arrayElement =>  Url = Url + "&SelectedRows=" + arrayElement );
+          
+            window.location.href = Url; 
+                    
+
+        });
+    });
+
+    $(document).ready(function () {
+        $("#StokButtonClose").click(function () {
+            document.getElementById("Sira").value = "";
+            document.getElementById("GridLookupStok_I").value = "";
+            document.getElementById("StokAdi").value = "";
+            document.getElementById("Miktar").value = "";
+            document.getElementById("Fiyat").value = "";
+            document.getElementById("GridLookup_I").value = "";
+            document.getElementById("IskontoOrani").value = "";
+            document.getElementById("Tutar").value = "";
+            document.getElementById("MaliyetTutari").value = "";
+            document.getElementById("Bakiye").value = "";
+        });
+    });
+
+    @*$(document).ready(function () {
+        $("#toPrint").click(function () {
+
+            console.log('@Url.Action("Print", "Teklif")/' + @id);
+            window.location.href  = '@Url.Action("Print", "Teklif")/' + @id ;
+
+        });
+    });*@
+
+</script>
+

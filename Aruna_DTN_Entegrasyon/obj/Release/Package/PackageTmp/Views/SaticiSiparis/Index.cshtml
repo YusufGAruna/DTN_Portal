@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Aruna_DTN_Entegrasyon.Models.Siparisler>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Satın Alma Siparişleri</h2>
+
+
+<br />
+
+<br />
+
+
+<span>
+
+
+
+</span>
+
+
+<p>
+    @Html.ActionLink("Yeni Satıcı Siparişi Oluştur", "Create", null, new { @class = "btn btn-info" })
+</p>
+
+<br />
+<br />
+
+
+
+@*<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FisNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tarih)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BelgeTipi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CariKod)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FisNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tarih)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BelgeTipi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CariKod)
+                </td>
+                <td>
+                    @Html.ActionLink("Detaylar", "Details", new { id = item.FisNo} , new {  @class = "btn btn-info btn-sm" })
+                </td>
+            </tr>
+        }
+
+    </table>*@
+
+
+
+@Html.Action("GridViewPartial")
+
+
+
+<br />
+<br />
+<br />
+<br />
+
+<script>
+
+</script>

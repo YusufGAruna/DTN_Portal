@@ -1,0 +1,44 @@
+@model System.Data.DataTable
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridViewRapor";
+        settings.CallbackRouteValues = new { Controller = "Rapor", Action = "GridViewPartialRapor" };
+
+
+        //settings.KeyFieldName = "FatNo";
+
+        settings.EnableCallbackAnimation = false;
+        settings.SettingsLoadingPanel.Text = "Lütfen Bekleyin";
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowFooter = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.Settings.AutoFilterCondition = AutoFilterCondition.Contains;
+        //settings.Settings.ShowHeaderFilterButton = true;
+        //settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+
+
+        settings.SettingsBehavior.AllowGroup = true;
+        settings.SettingsBehavior.AllowSort = true;
+        settings.SettingsBehavior.FilterRowMode = GridViewFilterRowMode.Auto;
+        settings.SettingsText.GroupPanel = "Kayýtlarý gruplamak için kolon baþlýðýný bu alana sürükleyip býrakýn";
+
+        settings.SettingsPager.PageSize = 10;
+        settings.Styles.AlternatingRow.BackColor = System.Drawing.Color.AliceBlue;
+        settings.Styles.Header.BackColor = System.Drawing.Color.LightSkyBlue;
+        settings.Styles.Header.ForeColor = System.Drawing.Color.Black;
+
+
+        foreach (System.Data.DataColumn column in Model.Columns)
+        {
+            settings.Columns.Add(column.ColumnName);
+        }
+
+    });
+
+
+
+}
+@grid.Bind(Model).GetHtml()

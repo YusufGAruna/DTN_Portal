@@ -1,0 +1,72 @@
+﻿@using System.Data;
+@model System.Data.DataTable
+@{
+    ViewBag.Title = "Index";
+}
+
+<script type="text/javascript">
+    function OnClick(s, e) {
+        @*window.location.href = '@Url.Action("ExportTo", "Rapor")';*@
+
+        window.open(
+            '@Url.Action("ExportTo", "Rapor")', "_blank");
+        
+    }
+</script>
+<br />
+<br />
+<div id="Raporlama">
+    <h2>Raporlar</h2>
+
+    <br />
+    <br />
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.Label("Rapor Adı")
+            </th>
+            <th>
+                @Html.Label("View Adı")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (DataRow item in Model.Rows)
+        {
+            <tr>
+                <td>
+                    @item[0].ToString()
+                </td>
+
+                <td>
+                    @item[1].ToString()
+                </td>
+
+                <td>
+                    @Html.ActionLink("Raporu Görüntüle", "Index", new { Rapor = item[1].ToString() }, new { @class = "btn btn-success btn-sm" })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <br />
+
+    @if (TempData["Rapor"] != null)
+    {
+        @Html.Action("GridViewPartialRapor")
+
+        <br />
+        @Html.DevExpress().Button(btn => {
+                       btn.Name = "btnExportToExcel";
+                       btn.Attributes["OutputFormatAttribute"] = "XLS";
+                       btn.Text = "EXCEL'E AKTAR";
+                       btn.ControlStyle.CssClass = "btn btn-default btn-xs";
+                       btn.UseSubmitBehavior = true;
+                       btn.ClientSideEvents.Click = "OnClick";
+    }).GetHtml()
+    }
+</div>
+
+

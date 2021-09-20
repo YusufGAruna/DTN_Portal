@@ -1,0 +1,841 @@
+﻿@model Aruna_DTN_Entegrasyon.Models.Siparisler
+
+
+
+@{
+    ViewBag.Title = "Create";
+    var Kullanici = ViewBag.Kullanici;
+    string MaxIskonto = Convert.ToString(Kullanici.IskontoOran);
+
+    bool isNull;
+    if (Model.Cari != null)
+    {
+        isNull = string.IsNullOrEmpty(Model.Cari.CariKod);
+    }
+    else
+    {
+        isNull = false;
+    }
+
+
+}
+
+
+
+<script type="text/javascript">
+
+
+    function OnSelectionChanged(s, e) {
+        s.GetRowValues(e.visibleIndex, "StokKodu;StokAdi;GrupKodu;Fiyat;KutuKati;Kdv", OnGetRowValues);
+    }
+
+    function OnGetRowValues(values) {
+        document.getElementById("GridLookupStok_I").value = values[0];
+        document.getElementById("StokAdi").value = values[1];
+        document.getElementById("Fiyat").value = values[3];
+        document.getElementById("KutuKati").value = values[4];
+        document.getElementById("Kdv").value = values[5];
+        @*$('#partialYaslandirma').load('@Url.Action("PartialYaslandirmaMethod", "Siparis")', { StokKodu: values[0] });*@
+
+        $.ajax({
+               url: '@Url.Action("PartialYaslandirmaMethod", "Siparis")',
+               type: 'GET',
+            data: {
+                StokKodu: values[0]
+                },
+            success: function (data) {
+
+                GridLookup.GetGridView().Refresh();
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+        });
+
+
+        if (document.getElementById('Miktar').value != null || document.getElementById('Miktar').value != '') {
+            document.getElementById('Tutar').value = document.getElementById('Miktar').value * values[3];
+        }
+
+        var x = document.getElementById("Depolar");
+
+        var Depo = x.options[x.selectedIndex].value;
+
+        $.ajax({
+               url: '@Url.Action("BakiyeResult", "Siparis")',
+               type: 'GET',
+            data: {
+                StokKodu: values[0]
+                },
+            success: function (data) {
+
+                document.getElementById("Bakiye").value = data;
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+        });
+
+        $.ajax({
+               url: '@Url.Action("GrupKoduKontrol", "Siparis")',
+               type: 'GET',
+            data: {
+                GrupKodu: values[2]
+                },
+            success: function (data) {
+                console.log(data);
+                if ('true' == data) {
+                    document.getElementById("Fiyat").readOnly = true;
+
+                } else {
+                    document.getElementById("Fiyat").readOnly = false;
+
+                }
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+         });
+
+
+    }
+</script>
+
+<script type="text/javascript">
+    //function OnGridFocusedYas(s, e) {
+    //    s.GetRowValues(s.GetFocusedRowIndex(), 'Fiyat;Miktar;DepoKodu', RowsetValue);
+    //}
+
+    function OnGridFocusedYas(s, e) {
+        s.GetRowValues(e.visibleIndex, 'Fiyat;Miktar;DepoKodu', RowsetValue);
+    }
+    function RowsetValue(values) {
+        document.getElementById("GridLookup_I").value = values[0];
+        if ('null' != values[1]) {
+            document.getElementById("MaxMiktar").value = values[1];
+        }
+
+        document.getElementById("Depolar").value = values[2];
+
+
+        if (document.getElementById('Miktar').value != null || document.getElementById('Miktar').value != '') {
+            document.getElementById('MaliyetTutari').value = document.getElementById('Miktar').value * values[0];
+        }
+    }
+</script>
+
+
+<script>
+    function MiktarChanged() {
+        document.getElementById("MaliyetTutari").value = document.getElementById("Miktar").value * document.getElementById("GridLookup_I").value;
+        document.getElementById("Tutar").value = document.getElementById("Miktar").value * document.getElementById("Fiyat").value;
+    }
+
+</script>
+
+<script>
+    function FiyatChanged() {
+        document.getElementById("MaliyetTutari").value = document.getElementById("Miktar").value * document.getElementById("GridLookup_I").value;
+        document.getElementById("Tutar").value = document.getElementById("Miktar").value * document.getElementById("Fiyat").value;
+    }
+
+</script>
+
+<script>
+    function GunChanged() {
+        //var d = Date.parse(document.getElementById("Tarih").value);
+        var date = document.getElementById("Tarih").value;
+        var day = date.split('.')[0];
+        var month = date.split('.')[1];
+        var year = date.split('.')[2];
+        var d = new Date(month + "/" + day + "/" + year);
+        var Difference_In_Time = Date.parse(d) + (1000 * 3600 * 24 * parseInt(document.getElementById("OdemeGun").value));
+        //dd.setDate(d + parseInt(document.getElementById("OdemeGun").value));
+        //let ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(dd);
+        //let mo = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(dd);
+        //let da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(dd);
+        //console.log(Difference_In_Time);
+        var dd = new Date(Difference_In_Time);
+        //console.log(Date.parse(dd));
+        var day = dd.getUTCDate() + 1;
+        var month = dd.getMonth() + 1;
+        var year = dd.getFullYear();
+        OdemeTarih.SetDate(dd);
+
+    }
+
+    function formatted_string(pad, user_str, pad_pos) {
+        if (typeof user_str === 'undefined')
+            return pad;
+        if (pad_pos == 1) {
+            return (pad + user_str).slice(-pad.length);
+        }
+        else {
+            return (user_str + pad).substring(0, pad.length);
+        }
+    }
+
+</script>
+
+<script>
+    function TarihChanged() {
+        //var d = document.getElementById("Tarih").value;
+        //var dd = document.getElementById("OdemeTarih").value;
+        var date = document.getElementById("Tarih").value;
+        var day = date.split('.')[0];
+        var month = date.split('.')[1];
+        var year = date.split('.')[2];
+        var d = new Date(month + "/" + day + "/" + year);
+        var date2 = OdemeTarih.GetDate();
+        //var day2 = date2.split('.')[1];
+        //var month2 = date2.split('.')[0];
+        //var year2 = date2.split('.')[2];
+        //var dd = new Date(month2 + "/" + day2 + "/" + year2);
+        var Difference_In_Time = Date.parse(date2) - Date.parse(d);
+        var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+        if (Difference_In_Days < 0) {
+            alert("Geçmiş tarih girilemez");
+            GunChanged();
+        } else {
+            document.getElementById("OdemeGun").value = Difference_In_Days;
+        }
+
+    }
+
+</script>
+
+
+<h2>Sipariş Oluştur</h2>
+
+@Html.Hidden("MaxMiktar", 0)
+
+@Html.Hidden("KutuKati", 0)
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div id="btnFirst" class="btn btn-default accordion"><span class="glyphicon glyphicon-chevron-right"></span> Sipariş Üst Bilgileri</div>
+        <div class="panel">
+            <br />
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.SipTip, "Sipariş Tipi", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EnumDropDownListFor(model => model.SipTip, "Sipariş Tipi Seçiniz", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.SipTip, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.FatNo, "Sipariş Numarası", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.FatNo, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                    @Html.ValidationMessageFor(model => model.FatNo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group" style="display: none">
+                @Html.LabelFor(model => model.FatNo, "Teklif Numarası", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TeklifNo, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                    @Html.ValidationMessageFor(model => model.TeklifNo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tarih, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Tarih, new { htmlAttributes = new { @class = "form-control date-picker", @readonly = "readonly" } })
+                    @Html.ValidationMessageFor(model => model.Tarih, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.OdemeGun, "Vade Günü", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.OdemeGun, "Ödeme Günü", new { htmlAttributes = new { @class = "form-control", @type = "number", @value = "0", @min = "0", @onchange = "GunChanged()" } })
+                    @Html.ValidationMessageFor(model => model.OdemeGun, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.OdemeTarih, "Vade Tarihi", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @*@Html.EditorFor(model => model.OdemeTarih, "Ödeme Tarihi", new { htmlAttributes = new { @class = "form-control date-picker", @onchange = "TarihChanged()"} })
+                        @Html.ValidationMessageFor(model => model.OdemeTarih, "", new { @class = "text-danger" })*@
+
+
+                    @Html.DevExpress().DateEditFor(model => model.OdemeTarih, settings =>
+               {
+                   settings.Properties.AllowNull = false;
+                   //settings.Properties.NullText = "Başlangıç Tarihi Seçiniz";
+                   settings.Properties.EditFormat = EditFormat.Custom;
+                   settings.Date = DateTime.Now.AddDays(-1);
+                   settings.ControlStyle.CssClass = "form-control";
+                   //settings.ClientSideEvents.Init = "RemoveClass";
+                   //settings.ClientSideEvents.EndCallback = "RemoveClass";
+                   settings.Width = System.Web.UI.WebControls.Unit.Percentage(30);
+                   settings.Properties.EditFormatString = "dd.MM.yyyy";
+                   settings.Properties.TimeSectionProperties.Visible = false;
+                   settings.Properties.TimeSectionProperties.TimeEditProperties.EditFormat = EditFormat.Custom;
+                   settings.Properties.ClientSideEvents.DateChanged = "TarihChanged";
+                   //settings.Properties.ClientSideEvents.CloseUp = "function(s, e) { EndDate.Focus(); EndDate.ShowDropDown();  }";
+                   //settings.Properties.TimeSectionProperties.TimeEditProperties.EditFormatString = "HH:mm";
+                   settings.Properties.CalendarProperties.TodayButtonText = "Bugün";
+                   settings.Properties.TimeSectionProperties.OkButtonText = "Tamam";
+                   settings.Properties.TimeSectionProperties.CancelButtonText = "İptal";
+
+               }).GetHtml()
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Plasiyer, "Plasiyer Kodu", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Plasiyer, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                    @Html.ValidationMessageFor(model => model.Plasiyer, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.AciklamaSahasi, "Açıklama Sahası", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.AciklamaSahasi, htmlAttributes: new { @class = "form-control", @maxlength = "300" })
+                    @Html.ValidationMessageFor(model => model.AciklamaSahasi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="btn btn-default accordion"><span class="glyphicon glyphicon-chevron-right"></span> Cari Bilgileri</div>
+        <div class="panel">
+            <br />
+            <br />
+            <div class="form-group">
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CariSec">
+                        Cari Seç
+                    </button>
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("Cari Kod", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cari.CariKod, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Cari Isim", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cari.CariIsim, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("Adres", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cari.Adres, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("Vergi Dairesi", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cari.VergiDairesi, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("Vergi Numarası", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cari.VergiNumarasi, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("Tc No", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cari.TcNo, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("E-Posta", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cari.EMail, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("İlgili Kişi", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cari.IlgiliKisi, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("Teslimat Adresi", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cari.TeslimatAdresi, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="btn btn-default accordion"><span class="glyphicon glyphicon-chevron-right"></span> Kalem Bilgileri</div>
+        <div class="panel">
+            <br />
+            <br />
+            <div class="form-group">
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label col-md-offset-1 col-md-2" })
+                <div class="col-md-10">
+                    <button type="button" id="AddKalemButton" class="btn btn-primary" data-toggle="modal" data-target="#AddItem">
+                        Kalem Ekle
+                    </button>
+                </div>
+                <hr />
+                <hr />
+                <div class="col-md-10">
+
+                    @Html.Action("GridViewPartialSiparisKalem")
+
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.Action("GridViewPartialKalemler")*@
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.ActionLink("Geri Dön", "Index", null, new { @class = "btn btn-primary" })
+                <input type="submit" value="Tamam" class="btn btn-default" />
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="CariSec" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button id="CariCloseButton" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Cari Seç</h4>
+                    @*<div class="modal-footer">
+                            @Html.ActionLink("Yeni Cari Oluştur", "CariOlustur", Model.Cari, new { @class = "btn btn-primary" })
+                        </div>*@
+                </div>
+                <form method="post">
+                    <div class="modal-body">
+
+                        @Html.Action("GridViewPartialCariler")
+
+                    </div>
+                    @*<div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+                            <button type="submit" class="btn btn-primary">Üye Ol</button>
+                        </div>*@
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="AddItem" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    @*<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>*@
+                    <h4 class="modal-title" id="myModalLabel">Kalem Ekleme</h4>
+                </div>
+                <form>
+                    <div style="margin-left:20px" class="modal-body">
+
+                        <div class="form-group">
+                            @Html.Label("Sira", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.Editor("Sira", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                        </div>
+                        <div class="form-group">
+                            @Html.Label("Tip", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.DropDownList("Tip", EnumHelper.GetSelectList(typeof(Aruna_DTN_Entegrasyon.Models.FatType)), "Lütfen Bir Tip Seçiniz", htmlAttributes: new { @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Depo Kodu", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.DropDownList("Depolar", TempData["Depolar"] as List<SelectListItem>, htmlAttributes: new { @class = "form-control", @readonly = "readonly" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Stok Kodu", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @*@Html.Editor("StokKodu", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1", @value = "1" } })*@
+
+
+                            <div id="StokDiv" onselect="Reloading()">
+                                @Html.Action("GridLookupPartialStok")
+                            </div>
+
+                            @*@Html.DropDownList("StokKodu", null, htmlAttributes: new { @class = "form-control selectpicker" })*@
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Stok Adı", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.Editor("StokAdi", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Maliyet Fiyatı", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @*@Html.Editor("MaliyetFiyati", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1.00", @value = "1.00" } })*@
+
+                            <div id="partialYaslandirma">
+                                @Html.Action("GridLookupPartialYaslandirma")
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Miktar", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.Editor("Miktar", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1", @value = "1", @onchange = "MiktarChanged()" } })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Fiyat", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.Editor("Fiyat", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1.00", @value = "1.00", @onchange = "FiyatChanged()" } })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Tutar", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.Editor("Tutar", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Maliyet Tutarı", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.Editor("MaliyetTutari", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Iskonto Oranı", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.Editor("IskontoOrani", new { htmlAttributes = new { @class = "form-control", @type = "number", @min = "1.00", default_value = "0" } })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Kdv", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.Editor("Kdv", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Toplam Bakiye", htmlAttributes: new { @class = "control-label col-md-4" })
+
+                            @Html.Editor("Bakiye", new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button id="StokButton" type="button" class="btn btn-primary">Kaydet</button>
+                        <button id="StokButtonClose" type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+
+<div>
+
+</div>
+
+<style>
+    .w55 {
+        width: 55%;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $("#AddKalemButton").click(function () {
+            var sira = $("#Sira").val();
+            if (!sira) {
+                document.getElementById("IskontoOrani").value = 0;
+            }
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#StokButton").click(function () {
+            var StokKod = $("#GridLookupStok_I").val();
+            var stokAdi = $("#StokAdi").val();
+            var x = document.getElementById("Depolar");
+
+            var depo = x.options[x.selectedIndex].value;
+            var depoad = x.options[x.selectedIndex].text;
+            var tipel = document.getElementById('Tip');
+            if (tipel.selectedIndex <= 0) {
+                alert("Lütfen tip seçiniz");
+            }
+            else {
+            var tip = tipel.options[tipel.selectedIndex].value;
+            var sira = $("#Sira").val();
+            var mik = $("#Miktar").val();
+            var Kdv = $("#Kdv").val();
+            var kutu = document.getElementById('KutuKati').value;
+            if (kutu != 1 && ((parseFloat(mik).toFixed(2) / parseFloat(kutu).toFixed(2))%1)!=0 ) {
+                mik = ((parseInt(mik / kutu) + 1) * kutu).toFixed(2);
+                alert('Kutu Katına tamamlanmıştır.');
+            }
+            document.getElementById('Miktar').value = mik;
+
+
+            var maxMiktar = document.getElementById('MaxMiktar').value;
+            maxMiktar = maxMiktar.replace(',', ".");
+            mik = parseFloat(mik.toString().replace(',', '.'));
+
+            maxMiktar = parseFloat(maxMiktar.replace(',', '.'));
+
+            var fiy = $("#Fiyat").val();
+            var malfiy = $("#GridLookup_I").val();
+            var isk = $("#IskontoOrani").val();
+                var bakiye = $("#Bakiye").val();
+
+                if (depoad == "TRANSIT" && tip != 1) {
+                    alert("TRANSIT Fatura için TRANSIT tip olmalı");
+                } else {
+                    if (mik == "" || fiy == "" || isk == "" || malfiy == "") {
+                alert("Alanlar boş geçilemez");
+            } else {
+                if (maxMiktar >= mik) {
+                    var MaxIsk = @MaxIskonto.Replace(',', '.');
+
+                    if (isk <= MaxIsk) {
+                        if (!sira) {
+                            sira = -1;
+                        }
+                        $.ajax({
+                            url: '@Url.Action("PartialKalemAddMethod", "Siparis")',
+                            type: 'GET',
+                            data: {
+                                Tip: tip,
+                                SiraNo: sira,
+                                StokKodu: StokKod,
+                                StokIsim: stokAdi,
+                                Depo: depo,
+                                DepoAdi: depoad,
+                                Miktar: mik,
+                                Fiyat: fiy,
+                                MaliyetFiyat: malfiy,
+                                IskontoOran: isk,
+                                Kdv:Kdv,
+                                Bakiye: bakiye
+                            },
+                            success: function (data) {
+                                GridViewKalem.Refresh();
+
+                                alert(data);
+                                $('#StokButtonClose').trigger('click');
+
+
+                            },
+                            error: function (hata, ajaxOptions, thrownError) {
+                                alert(thrownError.responseText);
+                            }
+                        });
+                    }
+                    else {
+                        alert(@MaxIskonto.Replace(',', '.') + " 'dan daha çok indirim yapamazsınız.");
+                    }
+                } else {
+                    alert(maxMiktar + " 'dan fazla satılamaz'");
+                }
+            }
+
+                }
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $("#StokButtonClose").click(function () {
+            document.getElementById("Sira").value = "";
+            document.getElementById("GridLookupStok_I").value = "";
+            document.getElementById("StokAdi").value = "";
+            document.getElementById("Miktar").value = "";
+            document.getElementById("Fiyat").value = "";
+            document.getElementById("GridLookup_I").value = "";
+            document.getElementById("IskontoOrani").value = "";
+            document.getElementById("Tutar").value = "";
+            document.getElementById("MaliyetTutari").value = "";
+            document.getElementById("Bakiye").value = "";
+        });
+    });
+
+
+    $('#Depolar').attr("disabled", true);
+    $('#Tarih').attr("disabled", true);
+
+
+</script>
+
+
+<script type="text/javascript">
+    function Reloading() {
+        var StokKodu = document.getElementById("GridLookupStok_I").value;
+        $.ajax({
+            url: '@Url.Action("StokValues", "Siparis")',
+            type: 'GET',
+            data: {
+                StokKodu: StokKodu
+                  },
+            success: function (data) {
+                var data = JSON.parse(data);
+                if (data != "Hata") {
+                    values = [data.StokKodu, data.StokAdi, data.GrupKodu, data.Fiyat, data.KutuKati, data.Kdv];
+                    OnGetRowValues(values);
+                }
+
+
+
+
+
+              },
+              error: function (hata, ajaxOptions, thrownError) {
+                 // alert(thrownError);
+              }
+        });
+    }
+
+</script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        if (new Boolean(@isNull.ToString().ToLower()) == true) {
+            document.getElementById("Cari_CariKod").readOnly = false;
+        }
+    });
+
+</script>
+
+
+@*<script type="text/javascript">
+        $(document).ready(function () {
+            $("#GridLookup_I").click(function () {
+                var StokKodu = $("#GridLookupStok_I").val();
+                alert(StokKodu);
+                @TempData["StokKodu"] = StokKod;
+                if (StokKod == "") {
+                    alert("Stok Kodu Alanı boş geçilemez");
+                } else {
+                    $.ajax({
+                        url: 'GridLookupPartialYaslandirma',
+                        data:{
+                            StokKodu: StokKodu
+                        },
+                        success: function (data) {
+                        },
+                        error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                        }
+                    });
+                    GridLookup.Refresh();
+                }
+            });
+        });
+    </script>*@
+
+
+
+
+
+
+<script>
+    function OnSec(sender) {
+        var idObj = $(sender).data();
+        $.ajax({
+               url: '@Url.Action("CariDoldur", "Siparis")',
+               type: 'GET',
+            data: {
+                CariKodu: idObj.id
+                },
+            success: function (data) {
+                var Cari = JSON.parse(data);
+                if ('null' != Cari.CariKod) {
+                    document.getElementById("Cari_CariKod").value = Cari.CariKod;
+                }
+                if ('null' != Cari.CariIsim) {
+                    document.getElementById("Cari_CariIsim").value = Cari.CariIsim;
+                }
+                if ('null' != Cari.TcNo) {
+                    document.getElementById("Cari_TcNo").value = Cari.TcNo;
+                }
+                if ('null' != Cari.Adres) {
+                    document.getElementById("Cari_Adres").value = Cari.Adres;
+                }
+                if ('null' != Cari.VergiDairesi) {
+                    document.getElementById("Cari_VergiDairesi").value = Cari.VergiDairesi;
+                }
+                if ('null' != Cari.VergiNumarasi) {
+                    document.getElementById("Cari_VergiNumarasi").value = Cari.VergiNumarasi;
+                }
+                document.getElementById("Cari_CariKod").readOnly = true;
+                $('#CariCloseButton').trigger('click');
+
+                       },
+                       error: function (hata, ajaxOptions, thrownError) {
+                            alert(thrownError);
+                       }
+         });
+    }
+</script>
+
+
+
+
+<script type="text/javascript">
+
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "inline") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "inline";
+            }
+        });
+    }
+</script>
+

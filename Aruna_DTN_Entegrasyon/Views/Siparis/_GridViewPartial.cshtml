@@ -1,0 +1,115 @@
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridView";
+        settings.CallbackRouteValues = new { Controller = "Siparis", Action = "GridViewPartial" };
+
+
+        settings.KeyFieldName = "FatNo";
+
+        settings.EnableCallbackAnimation = false;
+        settings.SettingsLoadingPanel.Text = "Lütfen Bekleyin";
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowFooter = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.Settings.AutoFilterCondition = AutoFilterCondition.Contains;
+        //settings.Settings.ShowHeaderFilterButton = true;
+        //settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+
+
+        settings.SettingsBehavior.AllowGroup = true;
+        settings.SettingsBehavior.AllowSort = true;
+        settings.SettingsBehavior.FilterRowMode = GridViewFilterRowMode.Auto;
+        settings.SettingsText.GroupPanel = "Kayýtlarý gruplamak için kolon baþlýðýný bu alana sürükleyip býrakýn";
+
+        settings.SettingsPager.PageSize = 10;
+        settings.Styles.AlternatingRow.BackColor = System.Drawing.Color.AliceBlue;
+        settings.Styles.Header.BackColor = System.Drawing.Color.LightSkyBlue;
+        settings.Styles.Header.ForeColor = System.Drawing.Color.Black;
+
+
+
+
+
+        settings.Columns.Add("FatNo");
+        // settings.Columns.Add("Tarih").PropertiesEdit.DisplayFormatString = "dd.MM.yyyy";
+        settings.Columns.Add(column =>
+           {
+               column.FieldName = "Tarih";
+               column.ColumnType = MVCxGridViewColumnType.DateEdit;
+               column.PropertiesEdit.DisplayFormatString = "dd.MM.yyyy";
+           });
+
+        //settings.Columns.Add("Cari_Kod");
+        settings.Columns.Add(column =>
+            {
+                column.FieldName = "Cari_Kod";
+                column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+            });
+
+
+        //settings.Columns.Add("Cari_Isim");
+        settings.Columns.Add(column =>
+            {
+                column.FieldName = "Cari_Isim";
+                column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+            });
+
+
+        settings.Columns.Add("OdemeGun");
+        settings.Columns.Add("OdemeTarih").PropertiesEdit.DisplayFormatString = "dd.MM.yyyy";
+        settings.Columns.Add("Plasiyer");
+        //settings.Columns.Add("Plasiyer_Ad");
+        settings.Columns.Add(column =>
+            {
+                column.FieldName = "Plasiyer_Ad";
+                column.Settings.ShowFilterRowMenuLikeItem = DefaultBoolean.True;
+            });
+
+        settings.Columns.Add("Proje");
+        settings.Columns.Add("Brut_Tutar");
+        settings.Columns.Add("Isk_Tutar");
+        settings.Columns.Add("Kdv");
+        settings.Columns.Add("Genel_Toplam");
+
+
+        //settings.Columns.Add("CariAdi");
+        //settings.Columns.Add("FaturaKalemler");
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(c =>
+            {
+                ViewContext.Writer.Write(string.Format("<span class=\"btn btn-primary btn-sm\"  data-id='{0}' onclick=\"OnDetay(this);\"> Detaylar</span>", c.KeyValue));
+            });
+        });
+
+        settings.Columns.Add(column =>
+        {
+            column.SetDataItemTemplateContent(c =>
+            {
+                ViewContext.Writer.Write(string.Format("<span class=\"btn btn-danger btn-sm\"  data-id='{0}' onclick=\"OnPrint(this);\"> Yazdýr</span>", c.KeyValue));
+            });
+        });
+    });
+
+
+
+}
+@grid.Bind(Model).GetHtml()
+
+
+<script>
+    function OnDetay(sender) {
+        var idObj = $(sender).data();
+        window.location.href = '@Url.Action("Details", "Siparis")/' + idObj.id
+    }
+</script>
+
+<script>
+    function OnPrint(sender) {
+         var idObj = $(sender).data();
+        window.location.href = '@Url.Action("Print", "Siparis")/' + idObj.id;
+    }
+</script>

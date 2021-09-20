@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>DTN İnşaat</h1>
+
+    @if (Convert.ToBoolean(TempData["Admin"]))
+    {
+        @*<p><a href=/Admin/Index class="btn btn-primary btn-lg">Kullanıcılar &raquo;</a></p>*@
+        @Html.ActionLink("Admin için Tanım Ekranları >>", "Index", "Admin", null, new { @class = "btn btn-primary" })
+    }
+    else
+    {
+        <p class="lead">Sipariş Listeleme, Rapor Görüntüleme gibi işlemlere aşağıdaki butonlara basarak ulaşabilirsiniz.</p>
+        @*<p><a href=/Siparis/Index class="btn btn-primary btn-lg">Siparişler &raquo;</a></p>*@
+        @Html.ActionLink("Siparişler >>", "Index", "Siparis", null, new { @class = "btn btn-primary" })
+        <br />
+        @Html.ActionLink("Teklifler >>", "Index", "Teklif", null, new { @class = "btn btn-primary" })
+        <br />
+        @Html.ActionLink("Satın Alma >>", "Index", "SaticiSiparis", null, new { @class = "btn btn-primary" })
+        <br />
+        @Html.ActionLink("Bloke Çöz >>", "Bloke", "Siparis", null, new { @class = "btn btn-primary" })
+        <br />
+        @Html.ActionLink("Raporlar >>", "Index", "Rapor", null, new { @class = "btn btn-primary" })
+        @*<p><a href=/Teklif/Index class="btn btn-primary btn-lg">Teklifler &raquo;</a></p>
+            <p><a href=/SaticiSiparis/Create class="btn btn-primary btn-lg">Satıcı Siparişi Oluştur &raquo;</a></p>*@
+    }
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+
+<!--
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+    -->
